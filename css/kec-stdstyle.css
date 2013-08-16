@@ -1,0 +1,356 @@
+﻿body,div,dl,dt,dd,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td,html,label,a {margin:0;padding:0;}
+/* table{border-collapse:collapse;border-spacing:0;} */
+fieldset,img,a img,:link img,:visited img {border:0;}
+address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+/* ol {list-style:none;} */
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;}
+q:before,q:after {content:'';}
+
+/* ------------------------ GLOBAL ELEMENTS ------------------------ */
+
+/* ------------------------ type selectors ------------------------ */
+body { 
+	text-align:center; 
+	font:12px/16px Trebuchet MS, Arial, "Helvetica", sans-serif; 
+	color: #000;
+	}
+	blockquote { margin-left:10px; margin-right:10px; }
+
+h1	{ font-size:12px; color:#837a7a;
+
+}
+h2	{ font-size:12px; color:#837a7a; }
+h3	{ font-size:12px; color:#837a7a; }
+
+h1 span,h2 span,h3 span	{ display:none; }
+a:link      { color: #2222bb; text-decoration: none; outline:none; cursor: pointer; font-size:14px;}
+a:visited	{ color: #2222bb; text-decoration: none; outline:none; cursor: pointer; font-size:14px;}
+a:hover	    { color: #B3815B; text-decoration:underline; outline:none; cursor: pointer; font-size:14px;}
+a:active	{ color: #B3815B; text-decoration:underline; outline:none; cursor: pointer; font-size:14px;}
+
+.BLUE a:link      { color: #5987c6; text-decoration: none; outline:none; cursor: pointer;}
+.BLUE a:visited	{ color: #5987c6; text-decoration: none; outline:none; cursor: pointer;}
+.BLUE a:hover	    { color: #B3815B; text-decoration:none; outline:none; cursor: pointer;}
+.BLUE a:active	{ color: #B3815B; text-decoration:none; outline:none; cursor: pointer;}
+
+.BROWN a:link      { color: #774400; text-decoration: none; outline:none; cursor: pointer;}
+.BROWN a:visited	{ color: #774400; text-decoration: none; outline:none; cursor: pointer;}
+.BROWN a:hover	    { color: #774400; text-decoration:none; outline:none; cursor: pointer;}
+.BROWN a:active	{ color: #774400; text-decoration:none; outline:none; cursor: pointer;}
+
+a.subnavmenu1
+{
+    font-size:12px;
+    font-weight:bold;
+    text-decoration:none;
+    color:White;
+    letter-spacing:1px;
+}
+a.subnavmenu1:link      { color: white; text-decoration: none;}
+a.subnavmenu1:visited	{ color: white; text-decoration: none;}
+a.subnavmenu1:hover	    { color: green; text-decoration:none;}
+a.subnavmenu1:active	{ color: green; text-decoration:none;}
+
+a.subnavmenu 
+{
+    font-size:12px;
+    font-weight:bold;
+    text-decoration:none;
+    color:White;
+}
+a.subnavmenu:link      { color: white; text-decoration: none;}
+a.subnavmenu:visited	{ color: white; text-decoration: none;}
+a.subnavmenu:hover	    { color: green; text-decoration:none;}
+a.subnavmenu:active	{ color: green; text-decoration:none;}
+
+.address {
+	font-size: 9px;
+	color: #837a7a;
+	font-family: Arial, "Helvetica", sans-serif;
+}
+
+.clear	{ 
+	clear:both;
+	}
+
+div.clear	{ 
+	height:.01em;
+	clear:both;
+	overflow:hidden;
+	}
+div.clear-h2	{ 
+	height:10px; 
+	clear:both;
+	overflow:hidden; 
+	}
+
+p.more-info {
+	text-align:right;
+	display:block;
+	}
+img.img-left { 
+	float:left; 
+	}
+
+img.img-right { 
+	float:right;
+	}
+
+            .style-subf
+            {
+                font-size: 14px;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #787878;
+                text-align: center;
+            }
+
+            .style12i
+            {
+                font-size: 12px;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #565656;
+                font-style: italic;
+            }
+            .style14
+            {
+                font-size: 14px;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #222222;
+                font-style: italic;
+            }
+            .style14i
+            {
+                font-size: 14px;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #565656;
+                font-style: italic;
+            }
+            .style14Grn
+            {
+                font-size: 14px;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #85c440;
+            }
+            .style14Plain
+            {
+                font-size: 14px;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+            }
+
+            .styleMed
+            {
+                font-size: medium;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #565656;
+            }
+            .style15
+            {
+                font-size: 15px;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #222222;
+            }
+            .style15i
+            {
+                font-size: 15px;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #222222;
+                font-style: italic;
+            }
+            .style16
+            {
+                font-size: 16px;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #222222;
+            }
+            .style16
+            {
+                font-size: 16px;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #222222;
+            }
+            .style18Grn
+            {
+                font-size: 18px;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #85c440;
+            }
+            .styleMedBlk
+            {
+                font-size: medium;
+                font-family:Omnes bold, "Arial", Helvetica, sans-serif;
+                color: #222222;
+            }
+            .styleMedGrn
+            {
+                font-size: medium;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #85c440;
+            }
+            .styleMedGrnCtr
+            {
+                font-size: medium;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #85c440;
+                text-align:center;
+            }
+            .styleSm
+            {
+                font-size: small;
+                font-family: Omnes, "Arial", Helvetica, sans-serif;
+                color: #565656;
+            }
+
+.BROWN {
+	font-size: 14px;
+	font-family:"Arial", Helvetica, sans-serif;
+	color:#774400;
+}
+
+.BROWN1 {
+	font-size: 18px;
+	font-family:"Arial", Helvetica, sans-serif;
+	color:#774400;
+}
+      
+.brown1 {
+	font-size: 17px;
+	font-family: Omnes, "Arial", Helvetica, sans-serif;
+	color:#774400;
+	font-weight: bold;
+	text-align: center;
+	}
+	
+.grey {
+	font-size: 14px;
+	font-family: Omnes, "Arial", Helvetica, sans-serif;
+	color:#787878;
+}
+
+.grey1 {
+	font-size: 17px;
+	font-family:"Arial", Helvetica, sans-serif;
+	color:#5987c6;
+	font-weight: bold;
+	text-align: center;
+	}
+
+.grey2 {
+	font-size: 18px;
+	font-family:"Arial", Helvetica, sans-serif;
+	color:#5987c6;
+	font-weight: bold;
+	text-align: center;
+	}
+
+.h1white {
+	font-size: 14px;
+	color: #000;
+	font-family:Omnes, Arial, "Helvetica", sans-serif;
+}
+
+.h1white1 {
+	font-size: 11px;
+	color: #837b70;
+	font-family:Omnes, Arial, "Helvetica", sans-serif;
+	line-height:20px;
+}
+
+.h1text {
+	font-size: 14px;
+	color: #fff;
+	font-family:Omnes, "Arial", Helvetica, sans-serif;
+	line-height:20px;
+}
+
+.h1text a:hover {
+	font-size: 14px;
+	color:#abc020;
+	font-family:Omnes, "Arial", Helvetica, sans-serif;
+}
+
+.h1text a:hover, h1text a:visited, h1text a:link {
+	color: #abc020;
+	}
+
+.h1title {
+	font-size: 18px;
+	color: #fff;
+	font-family:Omnes, "Arial", Helvetica, sans-serif;
+}
+
+.h2title {
+	font-size: 14px;
+	color: #CCCCCC;
+	padding-bottom:8px;
+	font-family:Omnes, Arial, "Helvetica", sans-serif;
+}
+
+.h1green26 {
+	font-family: Omnes, "Times New Roman", Times, serif;
+	font-size: 26px;
+	line-height: 33px;
+	color: #339933;
+}
+
+.h1green {
+	font-family: Omnes, "Times New Roman", Times, serif;
+	font-size: 20px;
+	line-height: 23px;
+	color: #339933;
+}
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height:0 auto; 
+    clear: both; 
+    visibility: hidden;
+	}
+
+/* ----------------footer------------------------------------ */
+#wrap-bottom {
+		width:100%;
+		padding-top:25px;
+		}
+
+#footer a:link {
+    color:white;
+}
+#footer a:visited
+{
+    color:white;
+}
+
+/*start eJungle Link*/
+div#mainFootereJungle
+{
+    text-align:center;         
+    position:relative;
+    padding: 17px 0px 0px 0px;
+}
+
+#ejungle_link
+{
+    text-decoration:none;
+	font-size:18px;
+	margin-right:5px;
+	font-family: Omnes, Arial;
+			  
+	text-align:center;
+}
+
+#ejungle_e
+{
+    color:#20a5b9;
+}
+#ejungle_j
+{
+    color:#20a5b9;
+	font-style:italic;
+}
+#ejungle_ungle
+{
+    color:#0055a6;
+}
+/*stop eJungle Link*/

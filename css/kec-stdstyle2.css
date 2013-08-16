@@ -1,0 +1,122 @@
+
+.BLUE {
+	font-size: 14px;
+	font-family: Omnes, "Arial", Helvetica, sans-serif;
+	color:#006699;
+}
+
+.GREEN1TABLE {
+	font-size: 14px;
+	font-family: Omnes, "Arial", Helvetica, sans-serif;
+	color:#85c440;
+	padding-top:5px;
+	padding-left:5px;
+	padding-bottom:5px;
+	border-width: 0 0 2px 2px;
+	border-color:#339933;
+	border-style:solid;
+	border-collapse:collapse;
+}
+.BLUE1CELL {
+	font-size: 14px;
+	font-family: Omnes, "Arial", Helvetica, sans-serif;
+	color:#006699;
+	padding-top:5px;
+	padding-left:5px;
+	padding-bottom:5px;
+	border-width:1px 1px 0 0;
+	border-style:solid;
+	border-color:#339933;
+}
+.GREEN1INVERT {
+	font-size: 14px;
+	font-family: Omnes, "Arial", Helvetica, sans-serif;
+	background:#339933;
+	padding-top:5px;
+	padding-left:5px;
+	padding-bottom:5px;
+	color:white;
+}
+
+.GREEN1 {
+	font-size: 12px;
+	font-family: Omnes, "Arial", Helvetica, sans-serif;
+	color:#5987c6;
+	padding-top:9px;
+	background:#c0eebb;
+}
+
+/* ------------------------------- CONTENT FRAMEWORK ------------------------------- */
+
+/* ------------------------ main framework ------------------------ */
+#wrap {
+	width:1000px;
+	margin:0 auto;
+	}
+
+/* ------------------------ masterhead  ------------------------ */
+#masterhead {
+	position:relative;
+	height:110px;
+	width:840px;
+}
+
+#flash {
+    height:166px;
+	width:1000px;
+	}
+#subflash {
+	float:left;
+    height:30px;
+	width:968px;
+	padding-top:15px;
+	}	
+
+/*------------------menu----------------------------*/
+
+.menu {position:relative; height:26px;width:938px;}
+.menu ul {list-style:none; z-index:10; position:absolute; z-index:100; }
+.menu li {float:left}
+.menu a, .menu a:active, .menu a:visited {text-decoration:none; color:#544204; font-size: 14px;font-family:"Arial", Helvetica, sans-serif;padding:10px}
+.menu a:hover {color:#B3815B}
+#slide {position:absolute; bottom:0; height:1px; background:#89957a; z-index:10}	
+
+
+/* Nivo Slider */
+#slider-wrapper {
+    height:402px;
+    margin:0 auto;
+	width:535px;
+}
+
+#slider {
+	position:relative;
+    width:535px;
+    height:402px;
+	background:url("/kidsite/images/loading.gif") no-repeat 50% 50%;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+
+#slider43-wrapper {
+    height:300px;
+    margin:0 auto;
+	width:400px;
+}
+
+#slider43 {
+	position:relative;
+    width:400px;
+    height:300px;
+	background:url("/teensite/images/loading.gif") no-repeat 50% 50%;
+}
+#slider43 img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}

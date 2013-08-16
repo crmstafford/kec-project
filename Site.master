@@ -1,0 +1,151 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head runat="server">
+        <title>TeenEcoClub</title>
+        <meta name="keywords" content= ""/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+        <link href="/css/kec-stdstyle.css" rel="stylesheet" type="text/css"  />
+        <link href="/css/kec-stdstyle2.css" rel="stylesheet" type="text/css"  />
+		<link href="/css/kec-stdstyle2teen.css" rel="stylesheet" type="text/css"  />
+        
+	    <script src="scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+ 		<script type="text/javascript" src="scripts/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="scripts/script.js"></script>
+        <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </head>
+
+    <body BGCOLOR="#f4f0e8">
+            <div id="wrap" align="center">
+                <div align="center" style="height:110px;width:990px;">
+                    <div style="float:right;margin-top:70px;">
+                        <a href="http://www.facebook.com/kidsecoclub" target="_blank"><img src="/images/social/facebook42.png" /></a>
+                        <a href="https://plus.google.com/108077412353767486720" target="_blank"><img src="/images/social/googleplus42.png" /></a>
+                        <a href="https://twitter.com/KidsEcoClub" target="_blank"><img src="/images/social/twitter42.png" /></a>
+                        <a href="http://vimeo.com/kidsecoclub" target="_blank"><img src="/images/social/vimeo42.png" /></a>
+                        <a href="https://www.youtube.com/channel/UCmjhh7kQfSTe0BQtotR81zw?feature=watch" target="_blank"><img src="/images/social/youtube42.png" /></a>
+<!--
+                        <a href="#" target="_blank"><img src="/images/social/linkedin42.png" /></a>
+-->
+                    </div>
+                    <div id="masterhead" align="center" style="margin-top:4px;width:600px;">
+                        <img src="/images/Teens_color-horiz.png" width="497" height="100" alt="" />
+                    </div>
+                </div>
+                <div id="subtop1" align="center">
+                    <div id="menuleft">
+                        <a href="Default.aspx"><img src="/images/menuhouse.png" alt="" /></a>
+                    </div>
+                    <div id="menuright">
+                        <a href="About.aspx"><img src="/images/menuabout.png" alt="" /></a>
+                        <a href="Youth.aspx"><img src="/images/menuyouth.png" alt="" /></a>
+                        <a href="Educators.aspx"><img src="/images/menueducators.png" alt="" /></a>
+<!--
+                        <a href="Parents.aspx"><img src="/images/menuparents.png" alt="" /></a>
+-->
+                        &nbsp;&nbsp;
+                        <a href="Clubs.aspx"><img src="/images/menuclubs.png" alt="" /></a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="NewsEvents.aspx"><img src="/images/menunewsevents.png" alt="" /></a>
+                        &nbsp;&nbsp;
+                    </div>
+                </div>
+                <div id="subtop2">
+
+                    <a href="Blogs.aspx" class="subnavmenu">BLOGS</a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="Videos.aspx" class="subnavmenu">MUST SEE VIDEOS</a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="Gardens.aspx" class="subnavmenu">GARDENS</a>
+                    &nbsp;&nbsp;|&nbsp;
+                    <a href="GreenYouth.aspx" class="subnavmenu">GREEN YOUTH COUNCIL</a>
+<!--
+                    <br />
+                    <a href="WhatsNew.aspx" class="subnavmenu">&nbsp;WHAT'S NEW</a>&nbsp;</a>
+-->
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="Volunteer.aspx" class="subnavmenu">VOLUNTEER</a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <a href="Donate.aspx" class="subnavmenu">DONATE</a>
+                </div>
+                <div id="flash" align="center">
+                    <asp:Image runat="server" ID="imgBanner" ImageUrl="images/services.jpg" />
+                </div>
+                    <div id="sidea-a" class="GREEN1">
+                        <asp:ContentPlaceHolder ID="ImagePlaceHolderA" runat="server"/>
+<!--
+                        <br/><br/>
+                        <strong class="styleMed">
+                            <i>Our Vision</i>
+                        </strong>
+                        <br/><br/>
+                        <span class="style11i">
+                            <b>KidsEcoClub</b> believes in an interdisciplinary approach to problem solving and that children learn best
+                            when offered multiple ways to experience environmental topics.
+                        </span>
+-->
+                        <br /><br />
+
+                        <asp:ContentPlaceHolder ID="LeftQuote1" runat="server" />
+
+                        <br/><br/>
+                        <asp:ContentPlaceHolder ID="ImagePlaceHolderB" runat="server"/>
+
+                        <br/><br/>
+                        <asp:ContentPlaceHolder ID="LeftQuote2" runat="server" />
+
+                        <br /><br />
+                        <asp:ContentPlaceHolder ID="ImagePlaceHolderC" runat="server"/>
+                        <br /><br />
+                        <asp:ContentPlaceHolder ID="LogoHolder" runat="server" />
+                        <br />
+                        <img src="/images/text-join.png" style="margin-left:-16px;margin-right:-14px;" alt="" />
+                        <br />
+                    </div>
+                    <div id="sidea-b">
+                        <div align="left">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+                        </div>
+                    </div>
+                    <div class="GREEN1" id="sidea-c" >
+                        <div align="left">
+                            <asp:ContentPlaceHolder ID="SideContent" runat="server"/>
+                        </div>
+                    </div>
+                    <div class="grey" id="sideb">
+                    </div>
+            </div>
+            <div id="footer" style="color:#ffffff;" >
+                <div id="footer-wood" align="center">
+                    <div id="howstart" align="right">
+                        <a href="Ecoclubs.aspx"><img src="/images/howstartclub.png" alt="" /></a>
+                    </div>
+                    <div id="lower-menu" align="center">
+                        <a href="FAQ.aspx"><img src="/images/menufaq.png" alt="" /></a>
+                        <a href="Resources.aspx"><img src="/images/menuresources.png" alt="" /></a>
+                        <a href="Corporate.aspx"><img src="/images/menucorporate.png" alt="" /></a>
+                        <a href="Privacy.aspx"><img src="/images/menuprivacy.png" alt="" /></a>
+                        <a href="ContactUs.aspx"><img src="/images/menucontact.png" alt="" /></a>
+                        <br />
+                        <div id="lowerlogo" align="left">
+                            <img src="/images/Teens_color-small.png" alt="" />
+                        </div>
+                <div id="cpyright">
+                    © 2013 KidsEcoClub
+                </div>
+                        <div align="left">
+                            <a href="http://www.ejungle.us" target="_blank" id="A1"><span id="Span1">e</span><span id="Span2">J</span><span id="Span3">ungle</span></a>
+                        </div>
+                    </div>
+                    <br />
+                    <div id="howhelp" align="right">
+                        <a href="GetInvolved.aspx"><img src="/images/howhelp.png" alt="" /></a>
+                    </div>
+                 </div>
+             </div>
+    </body>
+</html>

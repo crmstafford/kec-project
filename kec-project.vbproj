@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{6A2655AF-BD0E-4184-8A1A-00E6F1C9A209}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>kec_project</RootNamespace>
+    <AssemblyName>kec-project</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>kec-project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>kec-project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Blogs.aspx" />
+    <Content Include="Board.aspx" />
+    <Content Include="CharterForm.aspx" />
+    <Content Include="ClubAppln.aspx" />
+    <Content Include="ClubCharter.aspx" />
+    <Content Include="Clubs.aspx" />
+    <Content Include="Column-max-010911.aspx" />
+    <Content Include="Columns-max-cabrillo.aspx" />
+    <Content Include="Columns.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="Contrib-Bags.aspx" />
+    <Content Include="Contrib-Honey.aspx" />
+    <Content Include="Corporate.aspx" />
+    <Content Include="CorporateNews.aspx" />
+    <Content Include="css\kec-stdstyle.css" />
+    <Content Include="css\kec-stdstyle1.css" />
+    <Content Include="css\kec-stdstyle1teen.css" />
+    <Content Include="css\kec-stdstyle2.css" />
+    <Content Include="css\kec-stdstyle2teen.css" />
+    <Content Include="css\kec-videopage.css" />
+    <Content Include="css\nivo-slider.css" />
+    <Content Include="Curriculum.aspx" />
+    <Content Include="Default-multi.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DineOut.aspx" />
+    <Content Include="DO-signup.aspx" />
+    <Content Include="Donate.aspx" />
+    <Content Include="EcoClub-FAQ.aspx" />
+    <Content Include="Ecoclubs.aspx" />
+    <Content Include="Educators.aspx" />
+    <Content Include="eeiDetails.aspx" />
+    <Content Include="Events.aspx" />
+    <Content Include="ExecBoard.aspx" />
+    <Content Include="FAQ.aspx" />
+    <Content Include="Gardens.aspx" />
+    <Content Include="GetInvolved.aspx" />
+    <Content Include="GrantAppln.aspx" />
+    <Content Include="GreenYouth.aspx" />
+    <Content Include="Harvest.aspx" />
+    <Content Include="images\0926a.jpg" />
+    <Content Include="images\0926b.jpg" />
+    <Content Include="images\0926c.jpg" />
+    <Content Include="images\0926d.jpg" />
+    <Content Include="images\0926e.jpg" />
+    <Content Include="images\0926f.jpg" />
+    <Content Include="images\about-us.jpg" />
+    <Content Include="images\about-us2.png" />
+    <Content Include="images\alexw.jpg" />
+    <Content Include="images\amelia.jpg" />
+    <Content Include="images\aparish.jpg" />
+    <Content Include="images\armgrow.jpg" />
+    <Content Include="images\banner-clubs.jpg" />
+    <Content Include="images\banner-teens.jpg" />
+    <Content Include="images\Belize\belize1.jpg" />
+    <Content Include="images\Belize\belize2.jpg" />
+    <Content Include="images\Belize\belize3.jpg" />
+    <Content Include="images\Belize\belize4.jpg" />
+    <Content Include="images\Belize\belize5.jpg" />
+    <Content Include="images\Belize\belize6.png" />
+    <Content Include="images\Belize\belize7.png" />
+    <Content Include="images\Belize\belize8.jpg" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bg1.jpg" />
+    <Content Include="images\blogs-banner.jpg" />
+    <Content Include="images\board.jpg" />
+    <Content Include="images\board\aparish.jpg" />
+    <Content Include="images\board\cbrowne.jpg" />
+    <Content Include="images\board\cbrowne1.jpg" />
+    <Content Include="images\board\cbrowne_photo.png" />
+    <Content Include="images\board\cpeach-final.jpg" />
+    <Content Include="images\board\cpeach.jpg" />
+    <Content Include="images\board\cstafford.jpg" />
+    <Content Include="images\board\jjackson.jpg" />
+    <Content Include="images\board\kmengerink.jpg" />
+    <Content Include="images\board\nknowlton.jpg" />
+    <Content Include="images\board\noreskes.jpg" />
+    <Content Include="images\board\ntaylor.jpg" />
+    <Content Include="images\board\rjesse.jpg" />
+    <Content Include="images\board\susanguinn.jpg" />
+    <Content Include="images\botom.jpg" />
+    <Content Include="images\bottom.jpg" />
+    <Content Include="images\brownfooter.jpg" />
+    <Content Include="images\button_KEC_club_webpage.png" />
+    <Content Include="images\california-kids-care-main.jpg" />
+    <Content Include="images\call to action.jpg" />
+    <Content Include="images\call-to-action.jpg" />
+    <Content Include="images\call-to-action1.jpg" />
+    <Content Include="images\cbrowne.jpg" />
+    <Content Include="images\cbrowne1.jpg" />
+    <Content Include="images\cbrowne_photo.png" />
+    <Content Include="images\ccac.jpg" />
+    <Content Include="images\CCAC_Solid_Final_Logo.jpg" />
+    <Content Include="images\chickens.jpg" />
+    <Content Include="images\CM_poster.jpg" />
+    <Content Include="images\conserving.jpg" />
+    <Content Include="images\contact-us.jpg" />
+    <Content Include="images\corporate.jpg" />
+    <Content Include="images\cpeach-final.jpg" />
+    <Content Include="images\cpeach.jpg" />
+    <Content Include="images\cstafford.jpg" />
+    <Content Include="images\discover-museum.jpg" />
+    <Content Include="images\ecoclub-logo.png" />
+    <Content Include="images\ecoclub.jpg" />
+    <Content Include="images\ecoclub2.png" />
+    <Content Include="images\educators.jpg" />
+    <Content Include="images\educators2.png" />
+    <Content Include="images\eggs.jpg" />
+    <Content Include="images\eh-wheel.png" />
+    <Content Include="images\eh-wheel2.jpg" />
+    <Content Include="images\eh-wheel2.png" />
+    <Content Include="images\evan-solanabeach.jpg" />
+    <Content Include="images\evanl.jpg" />
+    <Content Include="images\events.jpg" />
+    <Content Include="images\events2.png" />
+    <Content Include="images\faq.jpg" />
+    <Content Include="images\flash.jpg" />
+    <Content Include="images\flash1resize.jpg" />
+    <Content Include="images\flash1resize90.jpg" />
+    <Content Include="images\flash2resize.jpg" />
+    <Content Include="images\flash2resize90.jpg" />
+    <Content Include="images\flash3resize.jpg" />
+    <Content Include="images\flash3resize90.jpg" />
+    <Content Include="images\flash4resize.jpg" />
+    <Content Include="images\flash4resize90.jpg" />
+    <Content Include="images\flash5resize.jpg" />
+    <Content Include="images\flash5resize90.jpg" />
+    <Content Include="images\fs815.jpg" />
+    <Content Include="images\fssn8x.jpg" />
+    <Content Include="images\garden-banner.jpg" />
+    <Content Include="images\GetClubWebPage.png" />
+    <Content Include="images\getinvolved.jpg" />
+    <Content Include="images\greenback.jpg" />
+    <Content Include="images\green_bar.png" />
+    <Content Include="images\guarneri.jpg" />
+    <Content Include="images\gyc-summit.jpg" />
+    <Content Include="images\gyc11a.jpg" />
+    <Content Include="images\gyc11b.jpg" />
+    <Content Include="images\gyc11c.jpg" />
+    <Content Include="images\gyc11d.jpg" />
+    <Content Include="images\gyc\alexw.jpg" />
+    <Content Include="images\gyc\amber-lg.jpg" />
+    <Content Include="images\gyc\amber.jpg" />
+    <Content Include="images\gyc\amelia.jpg" />
+    <Content Include="images\gyc\evan2012.jpg" />
+    <Content Include="images\gyc\evanl.jpg" />
+    <Content Include="images\gyc\francisco-lg.jpg" />
+    <Content Include="images\gyc\francisco.jpg" />
+    <Content Include="images\gyc\gage-lg.jpg" />
+    <Content Include="images\gyc\gage.jpg" />
+    <Content Include="images\gyc\gavin.jpg" />
+    <Content Include="images\gyc\gyc-jan13.jpg" />
+    <Content Include="images\gyc\gyc-nov12.jpg" />
+    <Content Include="images\gyc\gyc-summit.jpg" />
+    <Content Include="images\gyc\gyc11a.jpg" />
+    <Content Include="images\gyc\gyc11b.jpg" />
+    <Content Include="images\gyc\gyc11c.jpg" />
+    <Content Include="images\gyc\gyc11d.jpg" />
+    <Content Include="images\gyc\jaredw.jpg" />
+    <Content Include="images\gyc\jasmyn.jpg" />
+    <Content Include="images\gyc\katies.jpg" />
+    <Content Include="images\gyc\kaylee.jpg" />
+    <Content Include="images\gyc\maxg.jpg" />
+    <Content Include="images\gyc\maxg2.jpg" />
+    <Content Include="images\gyc\maxg3.jpg" />
+    <Content Include="images\gyc\milena-fact.jpg" />
+    <Content Include="images\gyc\milena.jpg" />
+    <Content Include="images\gyc\nikolas.jpg" />
+    <Content Include="images\gyc\olivia.jpg" />
+    <Content Include="images\gyc\oscarc.jpg" />
+    <Content Include="images\gyc\priscillah.jpg" />
+    <Content Include="images\gyc\raymondl.jpg" />
+    <Content Include="images\gyc\shelbym.jpg" />
+    <Content Include="images\gyc\sophia.jpg" />
+    <Content Include="images\gyc\spencer.jpg" />
+    <Content Include="images\harvest-banner.jpg" />
+    <Content Include="images\hens.jpg" />
+    <Content Include="images\home1.jpg" />
+    <Content Include="images\home2.jpg" />
+    <Content Include="images\home3.jpg" />
+    <Content Include="images\home4.jpg" />
+    <Content Include="images\howhelp.png" />
+    <Content Include="images\howstartclub.png" />
+    <Content Include="images\HRC_Logo.jpg" />
+    <Content Include="images\jaredw.jpg" />
+    <Content Include="images\jasmyn.jpg" />
+    <Content Include="images\jjackson.jpg" />
+    <Content Include="images\kec-logo-small.png" />
+    <Content Include="images\kec-logo-trans.png" />
+    <Content Include="images\kec-logo.jpg" />
+    <Content Include="images\kec-logo1.jpg" />
+    <Content Include="images\kec-new-logo.png" />
+    <Content Include="images\kec_web_logo.png" />
+    <Content Include="images\kec_web_logo1.png" />
+    <Content Include="images\kids.jpg" />
+    <Content Include="images\KIDS2.png" />
+    <Content Include="images\kidsharvest-logo.jpg" />
+    <Content Include="images\Kids_color-small.png" />
+    <Content Include="images\Kids_color.png" />
+    <Content Include="images\kmengerink.jpg" />
+    <Content Include="images\laguna.jpg" />
+    <Content Include="images\leftall-1.jpg" />
+    <Content Include="images\leftall-10.jpg" />
+    <Content Include="images\leftall-11.jpg" />
+    <Content Include="images\leftall-12.jpg" />
+    <Content Include="images\leftall-13.jpg" />
+    <Content Include="images\leftall-14.jpg" />
+    <Content Include="images\leftall-15.jpg" />
+    <Content Include="images\leftall-16.jpg" />
+    <Content Include="images\leftall-17.jpg" />
+    <Content Include="images\leftall-18.jpg" />
+    <Content Include="images\leftall-19.jpg" />
+    <Content Include="images\leftall-2.jpg" />
+    <Content Include="images\leftall-20.jpg" />
+    <Content Include="images\leftall-21.jpg" />
+    <Content Include="images\leftall-22.jpg" />
+    <Content Include="images\leftall-23.jpg" />
+    <Content Include="images\leftall-24.jpg" />
+    <Content Include="images\leftall-3.jpg" />
+    <Content Include="images\leftall-4.jpg" />
+    <Content Include="images\leftall-5.jpg" />
+    <Content Include="images\leftall-6.jpg" />
+    <Content Include="images\leftall-7.jpg" />
+    <Content Include="images\leftall-8.jpg" />
+    <Content Include="images\leftall-9.jpg" />
+    <Content Include="images\leftteen-1.jpg" />
+    <Content Include="images\leftteen-10.jpg" />
+    <Content Include="images\leftteen-2.jpg" />
+    <Content Include="images\leftteen-3.jpg" />
+    <Content Include="images\leftteen-4.jpg" />
+    <Content Include="images\leftteen-5.jpg" />
+    <Content Include="images\leftteen-6.jpg" />
+    <Content Include="images\leftteen-7.jpg" />
+    <Content Include="images\leftteen-8.jpg" />
+    <Content Include="images\leftteen-9.jpg" />
+    <Content Include="images\LoginButtonGreen.png" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\logokids.png" />
+    <Content Include="images\logokids2.png" />
+    <Content Include="images\logotagline.png" />
+    <Content Include="images\logotagline2.png" />
+    <Content Include="images\mainpg1.jpg" />
+    <Content Include="images\mainpg2.jpg" />
+    <Content Include="images\mainpg3.jpg" />
+    <Content Include="images\mainpg4.jpg" />
+    <Content Include="images\max-gator.jpg" />
+    <Content Include="images\maxfriend.jpg" />
+    <Content Include="images\maxg.jpg" />
+    <Content Include="images\maxnotes.jpg" />
+    <Content Include="images\menuabout.png" />
+    <Content Include="images\menubar.png" />
+    <Content Include="images\menubar1.png" />
+    <Content Include="images\menubar2.png" />
+    <Content Include="images\menuclubs.png" />
+    <Content Include="images\menucontact.png" />
+    <Content Include="images\menucorporate.png" />
+    <Content Include="images\menueco.png" />
+    <Content Include="images\menueducators.png" />
+    <Content Include="images\menuevents.png" />
+    <Content Include="images\menufaq.png" />
+    <Content Include="images\menuhouse.png" />
+    <Content Include="images\menukids.png" />
+    <Content Include="images\menunewsevents.png" />
+    <Content Include="images\menuparents.png" />
+    <Content Include="images\menuprivacy.png" />
+    <Content Include="images\menuresources.png" />
+    <Content Include="images\menuteens.png" />
+    <Content Include="images\menuyouth.png" />
+    <Content Include="images\miages.jpg" />
+    <Content Include="images\milena.jpg" />
+    <Content Include="images\natlaq.jpg" />
+    <Content Include="images\nav-bg.png" />
+    <Content Include="images\navigation.jpg" />
+    <Content Include="images\ndi-logo.jpg" />
+    <Content Include="images\newfooter.png" />
+    <Content Include="images\newkidslogo.png" />
+    <Content Include="images\newkidstaglogo.png" />
+    <Content Include="images\newmenubar3.png" />
+    <Content Include="images\newpic1.jpg" />
+    <Content Include="images\news-banner.png" />
+    <Content Include="images\newsevents-banner.jpg" />
+    <Content Include="images\newsletter.jpg" />
+    <Content Include="images\newteenslogo.png" />
+    <Content Include="images\newteenstaglogo.png" />
+    <Content Include="images\nikolask.jpg" />
+    <Content Include="images\nknowlton.jpg" />
+    <Content Include="images\nlogos\Kids_Black.jpg" />
+    <Content Include="images\nlogos\Kids_Color.jpg" />
+    <Content Include="images\nlogos\Teens_Black.jpg" />
+    <Content Include="images\nlogos\Teens_Color.jpg" />
+    <Content Include="images\nlogos\__MACOSX\._Kids_Black.jpg" />
+    <Content Include="images\nlogos\__MACOSX\._Kids_Color.jpg" />
+    <Content Include="images\nlogos\__MACOSX\._Teens_Black.jpg" />
+    <Content Include="images\nlogos\__MACOSX\._Teens_Color.jpg" />
+    <Content Include="images\noreskes.jpg" />
+    <Content Include="images\ntaylor.jpg" />
+    <Content Include="images\oceanportal.jpg" />
+    <Content Include="images\olivia.jpg" />
+    <Content Include="images\onepercent.png" />
+    <Content Include="images\parents-banner.jpg" />
+    <Content Include="images\parents.jpg" />
+    <Content Include="images\parents2.png" />
+    <Content Include="images\parker.jpg" />
+    <Content Include="images\partner-bastyr.jpg" />
+    <Content Include="images\partner-birch.jpg" />
+    <Content Include="images\partner-ccl.jpg" />
+    <Content Include="images\partner-cmbc.jpg" />
+    <Content Include="images\partner-lfrc.jpg" />
+    <Content Include="images\partner-lotus.jpg" />
+    <Content Include="images\partner-scripps.jpg" />
+    <Content Include="images\partner-sdcoe.jpg" />
+    <Content Include="images\partner-sdusd.jpg" />
+    <Content Include="images\partner-ucsd.jpg" />
+    <Content Include="images\partner-ucsd.png" />
+    <Content Include="images\partner-usd.png" />
+    <Content Include="images\pcwest.jpg" />
+    <Content Include="images\privacy.jpg" />
+    <Content Include="images\program-harvest.jpg" />
+    <Content Include="images\raymondl.jpg" />
+    <Content Include="images\recycle.jpg" />
+    <Content Include="images\Resources.jpg" />
+    <Content Include="images\rjesse.jpg" />
+    <Content Include="images\rtall-1.jpg" />
+    <Content Include="images\rtall-2.jpg" />
+    <Content Include="images\rtall-3.jpg" />
+    <Content Include="images\rtall-4.jpg" />
+    <Content Include="images\rtall-5.jpg" />
+    <Content Include="images\rtteen-1.jpg" />
+    <Content Include="images\rtteen-2.jpg" />
+    <Content Include="images\rtteen-3.jpg" />
+    <Content Include="images\rtteen-4.jpg" />
+    <Content Include="images\rtteen-5.jpg" />
+    <Content Include="images\sa.jpg" />
+    <Content Include="images\sanelijo.jpg" />
+    <Content Include="images\sb.jpg" />
+    <Content Include="images\sdcoe.jpg" />
+    <Content Include="images\sdge-conn.jpg" />
+    <Content Include="images\sdge-Oct2012.jpg" />
+    <Content Include="images\sdge.jpg" />
+    <Content Include="images\sdvision.png" />
+    <Content Include="images\sdvision1.png" />
+    <Content Include="images\sdvisionkec.jpg" />
+    <Content Include="images\sempra.png" />
+    <Content Include="images\services.jpg" />
+    <Content Include="images\shital.jpg" />
+    <Content Include="images\SIDE-B-BACK.jpg" />
+    <Content Include="images\silde-nav.png" />
+    <Content Include="images\slide-bg - Copy.png" />
+    <Content Include="images\slide-bg.png" />
+    <Content Include="images\starfish.jpg" />
+    <Content Include="images\stop-sharkfinning.jpg" />
+    <Content Include="images\stopshark.jpg" />
+    <Content Include="images\subflash.jpg" />
+    <Content Include="images\subpg1.jpg" />
+    <Content Include="images\subpg2.jpg" />
+    <Content Include="images\subpg3.jpg" />
+    <Content Include="images\subpg4.jpg" />
+    <Content Include="images\subpg5.jpg" />
+    <Content Include="images\subpg6.jpg" />
+    <Content Include="images\subtop.jpg" />
+    <Content Include="images\subtop1.jpg" />
+    <Content Include="images\subtop2.jpg" />
+    <Content Include="images\susanguinn.jpg" />
+    <Content Include="images\team.jpg" />
+    <Content Include="images\teen-banner1.jpg" />
+    <Content Include="images\teen-banner2.jpg" />
+    <Content Include="images\teen-banner4.jpg" />
+    <Content Include="images\teen-home2.jpg" />
+    <Content Include="images\teen-home3.jpg" />
+    <Content Include="images\teen-home4.jpg" />
+    <Content Include="images\teen-home5.jpg" />
+    <Content Include="images\teenbackground.jpg" />
+    <Content Include="images\Teens-color-horiz.png" />
+    <Content Include="images\teens-header.png" />
+    <Content Include="images\teens-meet.png" />
+    <Content Include="images\teens.jpg" />
+    <Content Include="images\Teens_color-horiz.png" />
+    <Content Include="images\Teens_color-small.png" />
+    <Content Include="images\Teens_color-squeeze.png" />
+    <Content Include="images\Teens_color.png" />
+    <Content Include="images\teenvideo-banner.jpg" />
+    <Content Include="images\tidepools1.jpg" />
+    <Content Include="images\tidepools2.jpg" />
+    <Content Include="images\tidepools3.jpg" />
+    <Content Include="images\TOP.jpg" />
+    <Content Include="images\topmenubar.png" />
+    <Content Include="images\two-girls.jpg" />
+    <Content Include="images\ucsd.jpg" />
+    <Content Include="images\volunteer-banner.jpg" />
+    <Content Include="images\weber.jpg" />
+    <Content Include="images\whatsnew-banner.jpg" />
+    <Content Include="images\woodfooter.png" />
+    <Content Include="images\woodfooter1.png" />
+    <Content Include="images\youth-banner.jpg" />
+    <Content Include="iuident.cab" />
+    <Content Include="MoreResources.aspx" />
+    <Content Include="NewsArchive.aspx" />
+    <Content Include="NewsEvents.aspx" />
+    <Content Include="Newsletter.aspx" />
+    <Content Include="ParentResources.aspx" />
+    <Content Include="Parents.aspx" />
+    <Content Include="Privacy.aspx" />
+    <Content Include="Programs.aspx" />
+    <Content Include="README.txt" />
+    <Content Include="Recycle.aspx" />
+    <Content Include="Resources.aspx" />
+    <Content Include="SafetyTips.aspx" />
+    <Content Include="Scripts\AC_RunActiveContent.js" />
+    <Content Include="Scripts\animatedcollapse.js" />
+    <Content Include="Scripts\ie6.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.log.js" />
+    <Content Include="Scripts\jquery.nivo.slider.js" />
+    <Content Include="Scripts\jquery.nivo.slider.pack.js" />
+    <Content Include="Scripts\pngfix.js" />
+    <Content Include="Scripts\script.js" />
+    <Content Include="Scripts\scripts.js" />
+    <Content Include="slides\owlet1.jpg" />
+    <Content Include="slides\owlet2.jpg" />
+    <Content Include="slides\owlet3.jpg" />
+    <Content Include="slides\owlet4.jpg" />
+    <Content Include="slides\owlet5.jpg" />
+    <Content Include="Team.aspx" />
+    <Content Include="Teens-old.aspx" />
+    <Content Include="Things25.aspx" />
+    <Content Include="Videos.aspx" />
+    <Content Include="Volunteer.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WhatsNew.aspx" />
+    <Content Include="Youth.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Documents\Attachments_2012_10_4.zip" />
+    <None Include="Documents\Bangalore-trash.pdf" />
+    <None Include="Documents\Belize.pdf" />
+    <None Include="Documents\BuildingBarnOwlBoxes.pdf" />
+    <None Include="Documents\charter.pdf" />
+    <None Include="Documents\ClubCharter.docx" />
+    <None Include="Documents\dine_out.pdf" />
+    <None Include="Documents\dine_out_ewarren.pdf" />
+    <None Include="Documents\EcoClub Community Service Project Ideas.pdf" />
+    <None Include="Documents\ecoclub_application.pdf" />
+    <None Include="Documents\EmailOverview.pdf" />
+    <None Include="Documents\Gardening 101 L1 Organic.pdf" />
+    <None Include="Documents\Gardening 101 L2 soil http.doc" />
+    <None Include="Documents\Gardening 101 L2 soil.pdf" />
+    <None Include="Documents\Gardening 101 L3 compost.doc" />
+    <None Include="Documents\Gardening 101 L3 compost.pdf" />
+    <None Include="Documents\gyc_applicationB.pdf" />
+    <None Include="Documents\jjackson-cv.pdf" />
+    <None Include="Documents\kec-clubs-documentation.pdf" />
+    <None Include="Documents\kec-manual-bw-11-2011.pdf" />
+    <None Include="Documents\kec-manual-bw.pdf" />
+    <None Include="Documents\kec-manual-color.pdf" />
+    <None Include="Documents\kec-overview-11-2011.pdf" />
+    <None Include="Documents\kec-overview.pdf" />
+    <None Include="Documents\kec_flier.pdf" />
+    <None Include="Documents\kec_flierB.pdf" />
+    <None Include="Documents\kec_flierB_9_13B.pdf" />
+    <None Include="Documents\kec_flier_10_19_11.pdf" />
+    <None Include="Documents\kec_flier_poster.pdf" />
+    <None Include="Documents\kec_flyer.pdf" />
+    <None Include="Documents\kec_garden_poster.pdf" />
+    <None Include="Documents\kec_owl_poster.pdf" />
+    <None Include="Documents\KH Growing Calif Raddish.doc" />
+    <None Include="Documents\KH Growing Peas.doc" />
+    <None Include="Documents\KH GROWING Snapdragons.doc" />
+    <None Include="Documents\KH GROWING Stevia in California.doc" />
+    <None Include="Documents\KidsHarvest.pdf" />
+    <None Include="Documents\L1 Organic .doc" />
+    <None Include="Documents\Max-deepseanews.pdf" />
+    <None Include="Documents\mentor-manual.pdf" />
+    <None Include="Documents\nknowlton-cv.pdf" />
+    <None Include="Documents\noma-flier.pdf" />
+    <None Include="Documents\ntaylor-summary.pdf" />
+    <None Include="Documents\OA_flyer.pdf" />
+    <None Include="Documents\ocean-pledge.pdf" />
+    <None Include="Documents\Otay Lakes Clean Up 2013.pdf" />
+    <None Include="Documents\Sample EcoClub Meeting Agenda.pdf" />
+    <None Include="Documents\Sample EcoClub Meeting Topic Ideas.pdf" />
+    <None Include="Documents\Sample EcoClub Officer Roles.pdf" />
+    <None Include="Documents\Sample On Campus EcoClub Bylaws.pdf" />
+    <None Include="Documents\sanelijolagoon.pdf" />
+    <None Include="Documents\SDCaN_CommunityAssetInventory_HighSchoolCollege_1jul10_Final.pdf" />
+    <None Include="Documents\SD_youth_leadership.pdf" />
+    <None Include="Documents\Simmons-Nest-Box-Design.pdf" />
+    <None Include="Documents\Teralta.pdf" />
+    <None Include="Documents\tricanyon.pdf" />
+    <None Include="Documents\yls-report-2013.pdf" />
+    <Content Include="images\Attachments_2012_09_10.zip" />
+    <None Include="images\SDVisionVote.pdf" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.master" />
+    <Content Include="Site2.master" />
+    <None Include="WUTRACK.BIN" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="videos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51952</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
