@@ -46,6 +46,14 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
     <strong class="h1green">
+        Board of Education Award to Max Guinn and KEC 
+    </strong>
+    <br /><br />
+        <iframe width="540" height="330" src="//www.youtube.com/embed/RLzpr-UV7Yk?rel=0" frameborder="0" allowfullscreen></iframe>
+        <br /><br />
+        <iframe width="540" height="330" src="//www.youtube.com/embed/LYyGfMDeXvU?rel=0" frameborder="0" allowfullscreen></iframe>
+        <br /><br /><br />
+    <strong class="h1green">
         Start a KEC Club!
     </strong>
     <br /><br />

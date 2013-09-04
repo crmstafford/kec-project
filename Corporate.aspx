@@ -40,6 +40,9 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+        <iframe src="https://docs.google.com/file/d/0B5IXz_Y0DQpnQlRXSmVjVXRiNFk/preview?pli=1" width="540" height="330"></iframe>
+        <br /><br />
+
         <strong class="h1green">
         Contact KEC to discuss how your organization can make a positive difference in supporting healthy people, healthy communities and a healthy planet.
         </strong>
