@@ -121,11 +121,16 @@
             <b>Best Garden:</b><br />
             The Edible Schoolyard Project - <a href="http://edibleschoolyard.org/" target="_blank">http://edibleschoolyard.org/</a>
         </span>
-
         <br /><br />
         <span class="style16">
             <b>Best School Food Reform:</b><br />
             Center for Ecoliteracy - <a href="http://www.ecoliteracy.org/ target="_blank">http://www.ecoliteracy.org/</a>
+        </span>
+        <br /><br /><br />
+        <span class="style16">
+            <b>California EEI Curriculum:</b><br />
+            <a href="/Documents/CCCSSGuide_K.3.c._Final_071113_ForWeb.pdf" target="blank">K.3.c - A Day In My Life</a><br />
+            <a href="/Documents/CCCSS_4.2.c._FinalProof_070213.pdf" target="blank">4.2.c - Life and Death with Decomposers</a>
         </span>
         <br /><br />
         <br />

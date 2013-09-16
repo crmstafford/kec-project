@@ -74,6 +74,10 @@
             <br /><br />
             <a href="http://www.californiaeei.org/WhyTeachEEI/default.htm" target="_blank">
             Why Teach EEI?</a>
+            <br /><br />
+            Teach Common Core Standards with EEI curriculum:<br />
+            <a href="/Documents/CCCSSGuide_K.3.c._Final_071113_ForWeb.pdf" target="blank">K.3.c - A Day In My Life</a><br />
+            <a href="/Documents/CCCSS_4.2.c._FinalProof_070213.pdf" target="blank">4.2.c - Life and Death with Decomposers</a>
         </span>
         <br /><br /><br />
 

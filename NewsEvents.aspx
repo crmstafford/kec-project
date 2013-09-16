@@ -44,6 +44,18 @@
 
         <span class="h1green">
             <strong>
+            Whole Foods Market Hillcrest gives Facebook shout-out to KEC
+            </strong>
+        </span>
+        <br /><br />
+        <div class="greycontent" style="text-align:justify;">
+        Sept. 13 - "During our Whole Kids Foundation fundraising campaign, we'd like to give props to the organizations that are really making a difference through
+        all the San Diego Unified School District schools, Kids Eco Club is one of those organizations!"
+        </span>
+        <br /><br /><br />
+
+        <span class="h1green">
+            <strong>
             Debra Hubers joins KEC's Board!
             </strong>
         </span>
