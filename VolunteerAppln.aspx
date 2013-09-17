@@ -18,14 +18,14 @@
 Sub Check(sender As Object, e As EventArgs)
    dim i
         Message.Text = "<p>Selected Item(s):</p>"
-        For i = 0 To cbgrp1.Items.Count - 1
-            If cbgrp1.Items(i).Selected Then
-                Message.Text += cbgrp1.Items(i).value + " "
+        For i = 0 To CBKec.Items.Count - 1
+            If CBKec.Items(i).Selected Then
+                Message.Text += CBKec.Items(i).Value + " "
             End If
         Next
-        For i = 0 To cbgrp2.Items.Count - 1
-            If cbgrp2.Items(i).Selected Then
-                Message.Text += cbgrp2.Items(i).Value + " "
+        For i = 0 To CBExper.Items.Count - 1
+            If CBExper.Items(i).Selected Then
+                Message.Text += CBExper.Items(i).Value + " "
             End If
         Next
 End Sub
@@ -33,9 +33,7 @@ End Sub
 
  <script Runat="Server" language="vbscript">
 
-     Sub Submit_Button(ByVal Src As Object, ByVal Args As EventArgs)
-
-         
+     Sub Submit_Button(ByVal Src As Object, ByVal Args As EventArgs)       
          ErrorMsg.Text = ""
          ErrorMsg.Visible = False
          Try
@@ -246,55 +244,148 @@ End Sub
                 Related education, skill, talent or opportunity.  Please check all that apply.<br /><br />
                 <table width="100%">
                 <tr>
-                <td>
+                <td valign="top">
                 <u>KEC Support</u><br />
-                    <asp:CheckBoxList id="cbgrp1" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
-                        <asp:ListItem Value="101">Item a1</asp:ListItem>
-                        <asp:ListItem Value="102">Item a2</asp:ListItem>
-                        <asp:ListItem Value="103">Item a3</asp:ListItem>
-                        <asp:ListItem Value="104">Item a4</asp:ListItem>
+                    <asp:CheckBoxList id="CBKec" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                        <asp:ListItem Value="K01">Audiovisual</asp:ListItem>
+                        <asp:ListItem Value="K02">Documentary production</asp:ListItem>
+                        <asp:ListItem Value="K03">Video production</asp:ListItem>
+                        <asp:ListItem Value="K04">Coding</asp:ListItem>
+                        <asp:ListItem Value="K05">App development</asp:ListItem>
+                        <asp:ListItem Value="K06">Club support</asp:ListItem>
+                        <asp:ListItem Value="K07">KEC office help</asp:ListItem>
+                        <asp:ListItem Value="K08">KEC web support</asp:ListItem>
+                        <asp:ListItem Value="K09">Social media</asp:ListItem>
+                        <asp:ListItem Value="K10">Newsletter support</asp:ListItem>
+                        <asp:ListItem Value="K11">Marketing</asp:ListItem>
+                        <asp:ListItem Value="K12">Grant writing</asp:ListItem>
+                        <asp:ListItem Value="K13">Fundraising</asp:ListItem>
+                        <asp:ListItem Value="K14">Transportation</asp:ListItem>
                         </asp:CheckBoxList>
                     <br />
                 </td>
-                <td>
+                <td valign="top">
                 <u>Experiences</u><br />
-                    <asp:CheckBoxList id="cbgrp2" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
-                        <asp:ListItem Value="201">Item b1</asp:ListItem>
-                        <asp:ListItem Value="202">Item b2</asp:ListItem>
-                        <asp:ListItem Value="203">Item b3</asp:ListItem>
-                        <asp:ListItem Value="204">Item b4</asp:ListItem>
+                    <asp:CheckBoxList id="CBExper" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                        <asp:ListItem Value="X01">Item b1</asp:ListItem>
+                        <asp:ListItem Value="X02">Item b2</asp:ListItem>
+                        <asp:ListItem Value="X03">Item b3</asp:ListItem>
+                        <asp:ListItem Value="X04">Item b4</asp:ListItem>
                         </asp:CheckBoxList>
                 </td>
-                <td>
+                <td valign="top">
                 <u>Construction</u><br />
-                    <asp:CheckBox ID="CheckBox9" runat="server" Text="&nbsp;button 301"></asp:CheckBox><br />
-                    <asp:CheckBox ID="CheckBox10" runat="server" Text="&nbsp;button 302"></asp:CheckBox><br />
-                    <asp:CheckBox ID="CheckBox11" runat="server" Text="&nbsp;button 303"></asp:CheckBox><br />
-                    <asp:CheckBox ID="CheckBox12" runat="server" Text="&nbsp;button 304"></asp:CheckBox><br />
+                    <asp:CheckBoxList id="CBConst" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                        <asp:ListItem Value="C01">Construction</asp:ListItem>
+                        <asp:ListItem Value="C02">Bat houses</asp:ListItem>
+                        <asp:ListItem Value="C03">Item b3</asp:ListItem>
+                        <asp:ListItem Value="C04">Item b4</asp:ListItem>
+                        </asp:CheckBoxList>
                 </td>
                 </tr>
                 <tr>
-                <td>
-                <u>Science</u><br />
-                    <asp:CheckBox ID="CheckBox13" runat="server" Text="&nbsp;button 401"></asp:CheckBox><br />
-                    <asp:CheckBox ID="CheckBox14" runat="server" Text="&nbsp;button 402"></asp:CheckBox><br />
-                    <asp:CheckBox ID="CheckBox15" runat="server" Text="&nbsp;button 403"></asp:CheckBox><br />
-                    <asp:CheckBox ID="CheckBox16" runat="server" Text="&nbsp;button 404"></asp:CheckBox><br />
+                <td valign="top">
+                <u>Science/Tech</u><br />
+                    <asp:CheckBoxList id="CBScience" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                        <asp:ListItem Value="S01">General sciences</asp:ListItem>
+                        <asp:ListItem Value="S02">Physics</asp:ListItem>
+                        <asp:ListItem Value="S03">Technology</asp:ListItem>
+                        <asp:ListItem Value="S04">Item b4</asp:ListItem>
+                        </asp:CheckBoxList>
                 </td>
-                <td>
-                <u>Gardens</u>
+                <td valign="top">
+                <u>Gardens</u><br />
+                    <asp:CheckBoxList id="CBGarden" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                        <asp:ListItem Value="G01">Garden boxes</asp:ListItem>
+                        <asp:ListItem Value="G02">Gardening</asp:ListItem>
+                        <asp:ListItem Value="G03">Hydroponics</asp:ListItem>
+                        <asp:ListItem Value="G04">Aquaponics</asp:ListItem>
+                        </asp:CheckBoxList>
                 </td>
-                <td>
+                <td valign="top">
                 <u>Health</u>
+                    <asp:CheckBoxList id="CBHealth" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                        <asp:ListItem Value="H01">Nutrition</asp:ListItem>
+                        <asp:ListItem Value="H02">Hunger</asp:ListItem>
+                        <asp:ListItem Value="H03">Health services</asp:ListItem>
+                        <asp:ListItem Value="H04">Healthy cooking</asp:ListItem>
+                        </asp:CheckBoxList>
                 </td>
                 </tr>
                 <tr><td>&nbsp;</td></tr>
                 <tr>
-                <td>
+                <td valign="top">
                 <u>Environmental</u>
+                    <asp:CheckBoxList id="CBEnviron" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                        <asp:ListItem Value="N01">Conservation</asp:ListItem>
+                        <asp:ListItem Value="N02">Recycling</asp:ListItem>
+                        <asp:ListItem Value="N03">Trash</asp:ListItem>
+                        <asp:ListItem Value="N04">Pollution</asp:ListItem>
+                        <asp:ListItem Value="N05">Composting</asp:ListItem>
+                        <asp:ListItem Value="N06">Climate change</asp:ListItem>
+                        <asp:ListItem Value="N07">Dead zone</asp:ListItem>
+                        <asp:ListItem Value="N08">Plastic bags</asp:ListItem>
+                        <asp:ListItem Value="N09">Electronic recycling</asp:ListItem>
+                        <asp:ListItem Value="N10">Water</asp:ListItem>
+                        </asp:CheckBoxList>
                 </td>
-                <td>
-                <u>Alternative Energy</u>
+                <td valign="top">
+                <u>Energy</u>
+                    <asp:CheckBoxList id="CBEnergy" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                        <asp:ListItem Value="E01">Green energy</asp:ListItem>
+                        <asp:ListItem Value="E02">Biofuels</asp:ListItem>
+                        <asp:ListItem Value="E03">Solar</asp:ListItem>
+                        <asp:ListItem Value="E04">Alternative energy</asp:ListItem>
+                        </asp:CheckBoxList>
+                </td>
+                <td valign="top">
+                <u>Marine Biology</u>
+                    <asp:CheckBoxList id="CBMarine" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                        <asp:ListItem Value="M01">Marine Biology</asp:ListItem>
+                        <asp:ListItem Value="M02">Fisheries</asp:ListItem>
+                        <asp:ListItem Value="M03">Oceanography</asp:ListItem>
+                        <asp:ListItem Value="M04">Whales</asp:ListItem>
+                        </asp:CheckBoxList>
+                </td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                <td valign="top">
+                <u>Biology/Wildlife</u>
+                    <asp:CheckBoxList id="CBBiology" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                        <asp:ListItem Value="B01">Biology</asp:ListItem>
+                        <asp:ListItem Value="B02">Zoology</asp:ListItem>
+                        <asp:ListItem Value="B03">Plant medicine</asp:ListItem>
+                        <asp:ListItem Value="B04">Owls</asp:ListItem>
+                        <asp:ListItem Value="B05">Wildlife</asp:ListItem>
+                        <asp:ListItem Value="B06">Habitat restoration</asp:ListItem>
+                        <asp:ListItem Value="B07">Genetically modified organisms</asp:ListItem>
+                        <asp:ListItem Value="B05">Wildlife</asp:ListItem>
+                        <asp:ListItem Value="B06">Habitat restoration</asp:ListItem>
+                        <asp:ListItem Value="B07">Genetically modified organisms</asp:ListItem>
+                        </asp:CheckBoxList>
+                </td>
+                <td valign="top">
+                <u>Outdoors</u>
+                    <asp:CheckBoxList id="CBOutdoors" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                        <asp:ListItem Value="O01">Field trips</asp:ListItem>
+                        <asp:ListItem Value="O02">Camping</asp:ListItem>
+                        <asp:ListItem Value="O03">Outdoor education</asp:ListItem>
+                        <asp:ListItem Value="O04">Ropes course</asp:ListItem>
+                        <asp:ListItem Value="O05">Water sports</asp:ListItem>
+                        <asp:ListItem Value="O06">Hiking</asp:ListItem>
+                        </asp:CheckBoxList>
+                </td>
+                <td valign="top">
+                <u>Arts/Speaking</u>
+                    <asp:CheckBoxList id="CBArts" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                        <asp:ListItem Value="A01">Art</asp:ListItem>
+                        <asp:ListItem Value="A02">Music</asp:ListItem>
+                        <asp:ListItem Value="A03">Public speaking</asp:ListItem>
+                        <asp:ListItem Value="A04">Motivational speaking</asp:ListItem>
+                        <asp:ListItem Value="A05">Dialog</asp:ListItem>
+                        <asp:ListItem Value="A06">Activism</asp:ListItem>
+                        </asp:CheckBoxList>
                 </td>
                 </tr>
                 </table>
