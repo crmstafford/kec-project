@@ -14,28 +14,75 @@
 </script>
 
 
-<script  runat="server">
-Sub Check(sender As Object, e As EventArgs)
-   dim i
-        Message.Text = "<p>Selected Item(s):</p>"
-        For i = 0 To CBKec.Items.Count - 1
-            If CBKec.Items(i).Selected Then
-                Message.Text += CBKec.Items(i).Value + " "
-            End If
-        Next
-        For i = 0 To CBExper.Items.Count - 1
-            If CBExper.Items(i).Selected Then
-                Message.Text += CBExper.Items(i).Value + " "
-            End If
-        Next
-End Sub
-</script>
-
  <script Runat="Server" language="vbscript">
 
      Sub Submit_Button(ByVal Src As Object, ByVal Args As EventArgs)       
          ErrorMsg.Text = ""
          ErrorMsg.Visible = False
+         
+         Dim i As Integer
+         Message.Text = "<p>Selected Item(s):</p>"
+         For i = 0 To CBKec.Items.Count - 1
+             If CBKec.Items(i).Selected Then
+                 Message.Text += CBKec.Items(i).Value + " "
+             End If
+         Next
+         For i = 0 To CBExper.Items.Count - 1
+             If CBExper.Items(i).Selected Then
+                 Message.Text += CBExper.Items(i).Value + " "
+             End If
+         Next
+         For i = 0 To CBConst.Items.Count - 1
+             If CBConst.Items(i).Selected Then
+                 Message.Text += CBConst.Items(i).Value + " "
+             End If
+         Next
+         For i = 0 To CBEnergy.Items.Count - 1
+             If CBEnergy.Items(i).Selected Then
+                 Message.Text += CBEnergy.Items(i).Value + " "
+             End If
+         Next
+         For i = 0 To CBHealth.Items.Count - 1
+             If CBHealth.Items(i).Selected Then
+                 Message.Text += CBHealth.Items(i).Value + " "
+             End If
+         Next
+         For i = 0 To CBScience.Items.Count - 1
+             If CBScience.Items(i).Selected Then
+                 Message.Text += CBScience.Items(i).Value + " "
+             End If
+         Next
+         For i = 0 To CBEnviron.Items.Count - 1
+             If CBEnviron.Items(i).Selected Then
+                 Message.Text += CBEnviron.Items(i).Value + " "
+             End If
+         Next
+         For i = 0 To CBMarine.Items.Count - 1
+             If CBMarine.Items(i).Selected Then
+                 Message.Text += CBMarine.Items(i).Value + " "
+             End If
+         Next
+         For i = 0 To CBBiology.Items.Count - 1
+             If CBBiology.Items(i).Selected Then
+                 Message.Text += CBBiology.Items(i).Value + " "
+             End If
+         Next
+         For i = 0 To CBGarden.Items.Count - 1
+             If CBGarden.Items(i).Selected Then
+                 Message.Text += CBGarden.Items(i).Value + " "
+             End If
+         Next
+         For i = 0 To CBArts.Items.Count - 1
+             If CBArts.Items(i).Selected Then
+                 Message.Text += CBArts.Items(i).Value + " "
+             End If
+         Next
+         For i = 0 To CBOutdoors.Items.Count - 1
+             If CBOutdoors.Items(i).Selected Then
+                 Message.Text += CBOutdoors.Items(i).Value + " "
+             End If
+         Next
+
          Try
              Dim objMail As MailSender = New MailSender()
              Dim timeNow As String = DateTime.Now.ToString()
@@ -48,13 +95,10 @@ End Sub
                  txt_addr1.Text & "," & txt_addr2.Text & "," & _
                  txt_city.Text & "," & txt_state.Text & "," & txt_zip.Text & "," & _
                  txt_email.Text & "," & _
-                 txt_primphone.Text & "," & txt_altphone.Text & "," & _
-                 "Other describe: " & txt_describe.Text & Chr(10) & Chr(13) & _
-                 "Admin position: " & txt_position.Text & Chr(10) & Chr(13) & _
-                 "Subject: " & txt_subject.Text
+                 txt_primphone.Text & "," & txt_altphone.Text & ","
              objMail.Send()
 
-             Message.Text = "Thank you, your volunteer application has been submitted<br><br>"
+             '             Message.Text = "Thank you, your volunteer application has been submitted<br><br>"
          Catch ex As Exception
              Message.Text = "Error " + ex.Message
          End Try
@@ -228,25 +272,13 @@ End Sub
                 <tr><td>&nbsp;</td></tr>
                 </table>
 
-                <b>Employment</b><br />
-                Please enter information on your current or most recent employer.<br />
-                <table>
-                <tr>
-                <td align="right">Employer:&nbsp;</td>
-                <td>
-                <asp:TextBox ID="txt_employer" runat="server"  columns="60" Width="400px"></asp:TextBox>
-                </td>
-                </tr>
-                </table>
-                <br />
-
                 <b>Education/Skills/Talent/Opportunity</b><br />
                 Related education, skill, talent or opportunity.  Please check all that apply.<br /><br />
                 <table width="100%">
                 <tr>
                 <td valign="top">
                 <u>KEC Support</u><br />
-                    <asp:CheckBoxList id="CBKec" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                    <asp:CheckBoxList id="CBKec" TextAlign="Right" runat="server">
                         <asp:ListItem Value="K01">Audiovisual</asp:ListItem>
                         <asp:ListItem Value="K02">Documentary production</asp:ListItem>
                         <asp:ListItem Value="K03">Video production</asp:ListItem>
@@ -262,61 +294,25 @@ End Sub
                         <asp:ListItem Value="K13">Fundraising</asp:ListItem>
                         <asp:ListItem Value="K14">Transportation</asp:ListItem>
                         </asp:CheckBoxList>
-                    <br />
                 </td>
                 <td valign="top">
-                <u>Experiences</u><br />
-                    <asp:CheckBoxList id="CBExper" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
-                        <asp:ListItem Value="X01">Item b1</asp:ListItem>
-                        <asp:ListItem Value="X02">Item b2</asp:ListItem>
-                        <asp:ListItem Value="X03">Item b3</asp:ListItem>
-                        <asp:ListItem Value="X04">Item b4</asp:ListItem>
+                <u>Biology/Wildlife</u>
+                    <asp:CheckBoxList id="CBBiology" TextAlign="Right" runat="server">
+                        <asp:ListItem Value="B01">Biology</asp:ListItem>
+                        <asp:ListItem Value="B02">Zoology</asp:ListItem>
+                        <asp:ListItem Value="B03">Plant medicine</asp:ListItem>
+                        <asp:ListItem Value="B04">Owls</asp:ListItem>
+                        <asp:ListItem Value="B05">Wildlife</asp:ListItem>
+                        <asp:ListItem Value="B06">Habitat restoration</asp:ListItem>
+                        <asp:ListItem Value="B07">Genetically modified organisms</asp:ListItem>
+                        <asp:ListItem Value="B08">Wildlife</asp:ListItem>
+                        <asp:ListItem Value="B09">Habitat restoration</asp:ListItem>
+                        <asp:ListItem Value="B10">Jungle Cats</asp:ListItem>
                         </asp:CheckBoxList>
                 </td>
-                <td valign="top">
-                <u>Construction</u><br />
-                    <asp:CheckBoxList id="CBConst" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
-                        <asp:ListItem Value="C01">Construction</asp:ListItem>
-                        <asp:ListItem Value="C02">Bat houses</asp:ListItem>
-                        <asp:ListItem Value="C03">Item b3</asp:ListItem>
-                        <asp:ListItem Value="C04">Item b4</asp:ListItem>
-                        </asp:CheckBoxList>
-                </td>
-                </tr>
-                <tr>
-                <td valign="top">
-                <u>Science/Tech</u><br />
-                    <asp:CheckBoxList id="CBScience" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
-                        <asp:ListItem Value="S01">General sciences</asp:ListItem>
-                        <asp:ListItem Value="S02">Physics</asp:ListItem>
-                        <asp:ListItem Value="S03">Technology</asp:ListItem>
-                        <asp:ListItem Value="S04">Item b4</asp:ListItem>
-                        </asp:CheckBoxList>
-                </td>
-                <td valign="top">
-                <u>Gardens</u><br />
-                    <asp:CheckBoxList id="CBGarden" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
-                        <asp:ListItem Value="G01">Garden boxes</asp:ListItem>
-                        <asp:ListItem Value="G02">Gardening</asp:ListItem>
-                        <asp:ListItem Value="G03">Hydroponics</asp:ListItem>
-                        <asp:ListItem Value="G04">Aquaponics</asp:ListItem>
-                        </asp:CheckBoxList>
-                </td>
-                <td valign="top">
-                <u>Health</u>
-                    <asp:CheckBoxList id="CBHealth" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
-                        <asp:ListItem Value="H01">Nutrition</asp:ListItem>
-                        <asp:ListItem Value="H02">Hunger</asp:ListItem>
-                        <asp:ListItem Value="H03">Health services</asp:ListItem>
-                        <asp:ListItem Value="H04">Healthy cooking</asp:ListItem>
-                        </asp:CheckBoxList>
-                </td>
-                </tr>
-                <tr><td>&nbsp;</td></tr>
-                <tr>
                 <td valign="top">
                 <u>Environmental</u>
-                    <asp:CheckBoxList id="CBEnviron" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                    <asp:CheckBoxList id="CBEnviron" TextAlign="Right" runat="server">
                         <asp:ListItem Value="N01">Conservation</asp:ListItem>
                         <asp:ListItem Value="N02">Recycling</asp:ListItem>
                         <asp:ListItem Value="N03">Trash</asp:ListItem>
@@ -327,58 +323,76 @@ End Sub
                         <asp:ListItem Value="N08">Plastic bags</asp:ListItem>
                         <asp:ListItem Value="N09">Electronic recycling</asp:ListItem>
                         <asp:ListItem Value="N10">Water</asp:ListItem>
-                        </asp:CheckBoxList>
-                </td>
-                <td valign="top">
-                <u>Energy</u>
-                    <asp:CheckBoxList id="CBEnergy" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
-                        <asp:ListItem Value="E01">Green energy</asp:ListItem>
-                        <asp:ListItem Value="E02">Biofuels</asp:ListItem>
-                        <asp:ListItem Value="E03">Solar</asp:ListItem>
-                        <asp:ListItem Value="E04">Alternative energy</asp:ListItem>
-                        </asp:CheckBoxList>
-                </td>
-                <td valign="top">
-                <u>Marine Biology</u>
-                    <asp:CheckBoxList id="CBMarine" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
-                        <asp:ListItem Value="M01">Marine Biology</asp:ListItem>
-                        <asp:ListItem Value="M02">Fisheries</asp:ListItem>
-                        <asp:ListItem Value="M03">Oceanography</asp:ListItem>
-                        <asp:ListItem Value="M04">Whales</asp:ListItem>
+                        <asp:ListItem Value="N11">Wetlands</asp:ListItem>
                         </asp:CheckBoxList>
                 </td>
                 </tr>
                 <tr><td>&nbsp;</td></tr>
                 <tr>
                 <td valign="top">
-                <u>Biology/Wildlife</u>
-                    <asp:CheckBoxList id="CBBiology" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
-                        <asp:ListItem Value="B01">Biology</asp:ListItem>
-                        <asp:ListItem Value="B02">Zoology</asp:ListItem>
-                        <asp:ListItem Value="B03">Plant medicine</asp:ListItem>
-                        <asp:ListItem Value="B04">Owls</asp:ListItem>
-                        <asp:ListItem Value="B05">Wildlife</asp:ListItem>
-                        <asp:ListItem Value="B06">Habitat restoration</asp:ListItem>
-                        <asp:ListItem Value="B07">Genetically modified organisms</asp:ListItem>
-                        <asp:ListItem Value="B05">Wildlife</asp:ListItem>
-                        <asp:ListItem Value="B06">Habitat restoration</asp:ListItem>
-                        <asp:ListItem Value="B07">Genetically modified organisms</asp:ListItem>
+                <u>Experiences</u><br />
+                    <asp:CheckBoxList id="CBExper" TextAlign="Right" runat="server">
+                        <asp:ListItem Value="X01">Educator</asp:ListItem>
+                        <asp:ListItem Value="X02">Leadership</asp:ListItem>
+                        <asp:ListItem Value="X03">Law</asp:ListItem>
+                        <asp:ListItem Value="X04">Policy</asp:ListItem>
+                        <asp:ListItem Value="X05">Politics</asp:ListItem>
+                        <asp:ListItem Value="X06">Lab visits</asp:ListItem>
+                        <asp:ListItem Value="X07">Student internship</asp:ListItem>
+                        <asp:ListItem Value="X08">Museum visits</asp:ListItem>
+                        <asp:ListItem Value="X09">Aquarium visits</asp:ListItem>
+                        </asp:CheckBoxList>
+                </td>
+                <td valign="top">
+                <u>Marine Biology</u>
+                    <asp:CheckBoxList id="CBMarine" TextAlign="Right" runat="server">
+                        <asp:ListItem Value="M01">Marine Biology</asp:ListItem>
+                        <asp:ListItem Value="M02">Fisheries</asp:ListItem>
+                        <asp:ListItem Value="M03">Oceanography</asp:ListItem>
+                        <asp:ListItem Value="M04">Whales</asp:ListItem>
+                        <asp:ListItem Value="M05">Frogs</asp:ListItem>
+                        <asp:ListItem Value="M06">Tidepools</asp:ListItem>
+                        <asp:ListItem Value="M07">Sharks</asp:ListItem>
                         </asp:CheckBoxList>
                 </td>
                 <td valign="top">
                 <u>Outdoors</u>
-                    <asp:CheckBoxList id="CBOutdoors" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                    <asp:CheckBoxList id="CBOutdoors" TextAlign="Right" runat="server">
                         <asp:ListItem Value="O01">Field trips</asp:ListItem>
                         <asp:ListItem Value="O02">Camping</asp:ListItem>
                         <asp:ListItem Value="O03">Outdoor education</asp:ListItem>
                         <asp:ListItem Value="O04">Ropes course</asp:ListItem>
                         <asp:ListItem Value="O05">Water sports</asp:ListItem>
                         <asp:ListItem Value="O06">Hiking</asp:ListItem>
+                        <asp:ListItem Value="O07">Nature Experiences</asp:ListItem>
+                        </asp:CheckBoxList>
+                </td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                <td valign="top">
+                <u>Science/Tech</u><br />
+                    <asp:CheckBoxList id="CBScience" TextAlign="Right" runat="server">
+                        <asp:ListItem Value="S01">General sciences</asp:ListItem>
+                        <asp:ListItem Value="S02">Physics</asp:ListItem>
+                        <asp:ListItem Value="S03">Technology</asp:ListItem>
+                        <asp:ListItem Value="S04">Engineeering</asp:ListItem>
+                        <asp:ListItem Value="S05">Math</asp:ListItem>
+                        <asp:ListItem Value="S06">Inventions</asp:ListItem>
+                        </asp:CheckBoxList>
+                </td>
+                <td valign="top">
+                <u>Gardens</u><br />
+                    <asp:CheckBoxList id="CBGarden" TextAlign="Right" runat="server">
+                        <asp:ListItem Value="G01">Garden boxes</asp:ListItem>
+                        <asp:ListItem Value="G02">Gardening</asp:ListItem>
+                        <asp:ListItem Value="G03">Hydroponics</asp:ListItem>
+                        <asp:ListItem Value="G04">Aquaponics</asp:ListItem>
                         </asp:CheckBoxList>
                 </td>
                 <td valign="top">
                 <u>Arts/Speaking</u>
-                    <asp:CheckBoxList id="CBArts" AutoPostBack="True" TextAlign="Right" OnSelectedIndexChanged="Check" runat="server">
+                    <asp:CheckBoxList id="CBArts" TextAlign="Right" runat="server">
                         <asp:ListItem Value="A01">Art</asp:ListItem>
                         <asp:ListItem Value="A02">Music</asp:ListItem>
                         <asp:ListItem Value="A03">Public speaking</asp:ListItem>
@@ -388,37 +402,177 @@ End Sub
                         </asp:CheckBoxList>
                 </td>
                 </tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                <td valign="top">
+                <u>Health</u>
+                    <asp:CheckBoxList id="CBHealth" TextAlign="Right" runat="server">
+                        <asp:ListItem Value="H01">Nutrition</asp:ListItem>
+                        <asp:ListItem Value="H02">Hunger</asp:ListItem>
+                        <asp:ListItem Value="H03">Health services</asp:ListItem>
+                        <asp:ListItem Value="H04">Healthy cooking</asp:ListItem>
+                        </asp:CheckBoxList>
+                </td>
+                <td valign="top">
+                <u>Energy</u>
+                    <asp:CheckBoxList id="CBEnergy" TextAlign="Right" runat="server">
+                        <asp:ListItem Value="E01">Green energy</asp:ListItem>
+                        <asp:ListItem Value="E02">Biofuels</asp:ListItem>
+                        <asp:ListItem Value="E03">Solar</asp:ListItem>
+                        <asp:ListItem Value="E04">Alternative energy</asp:ListItem>
+                        </asp:CheckBoxList>
+                </td>
+                <td valign="top">
+                <u>Construction</u><br />
+                    <asp:CheckBoxList id="CBConst" TextAlign="Right" runat="server">
+                        <asp:ListItem Value="C01">Construction</asp:ListItem>
+                        <asp:ListItem Value="C02">Bat houses</asp:ListItem>
+                        <asp:ListItem Value="C03">Rain barrels</asp:ListItem>
+                        </asp:CheckBoxList>
+                </td>
+
+                </tr>
                 </table>
+                <br /><br />
+
+                <b>Employment</b><br />
+                Please enter information on your current or most recent employer.<br />
+                <table>
+                <tr>
+                <td align="right">Employer:&nbsp;</td>
+                <td>
+                <asp:TextBox ID="txt_employer" runat="server"  columns="60" Width="400px"></asp:TextBox>
+                </td>
+                </tr>
+                <tr>
+                <td align="right">Address:&nbsp;</td>
+                <td>
+                <asp:TextBox ID="txt_empaddr" runat="server"  columns="60" Width="400px"></asp:TextBox>
+                </td>
+                </tr>
+                <tr>
+                <td align="right">Position/Title:&nbsp;</td>
+                <td>
+                <asp:TextBox ID="txt_title" runat="server"  columns="60" Width="400px"></asp:TextBox>
+                </td>
+                </tr>
+                <tr>
+                <td align="right">Start/end empl. dates:&nbsp;</td>
+                <td>
+                <asp:TextBox ID="txt_empdates" runat="server"  columns="60" Width="400px"></asp:TextBox>
+                </td>
+                </tr>
+                <tr><td></td><td>
+                <asp:CheckBox ID="check_advempl" runat="server" Text="&nbsp; Check if you want us to keep your employer abreast of your volunteer services or achievements."></asp:CheckBox>
+                </td></tr>
+                </table>
+                <br /><br />
 
                 <table>
                 <tr>
-                <td align="right" valign="top">
-                <asp:Label ID="label_describe" runat="server" Visible="false" Text="Describe: " />
+                <td Align="Right" >
+                Have you ever been convicted of a crime?&nbsp;&nbsp;
                 </td>
                 <td>
-                <asp:TextBox ID="txt_describe" runat="server" columns="100" Width="400px" Visible="false"></asp:TextBox>
+                <asp:DropDownList runat="server" ID="yn_crime" Width="60px">
+                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Value="Y">Yes</asp:ListItem>
+                	<asp:ListItem Value="N">No</asp:ListItem>
+                </asp:DropDownList>
                 </td>
                 </tr>
                 <tr>
-                <td align="right" valign="top">
-                <asp:Label ID="label_subject" runat="server" Visible="false" Text="* Subject: " />
+                <td Align="Right" >
+                Have you ever been convicted of, or plead guilty to domestic violence?&nbsp;&nbsp;
                 </td>
                 <td>
-                <asp:TextBox ID="txt_subject" runat="server" columns="100" Width="400px" Visible="false"></asp:TextBox>
+                <asp:DropDownList runat="server" ID="yn_domestic" Width="60px">
+                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Value="Y">Yes</asp:ListItem>
+                	<asp:ListItem Value="N">No</asp:ListItem>
+                </asp:DropDownList>
                 </td>
                 </tr>
                 <tr>
-                <td align="right">
-                <asp:Label ID="label_position" runat="server" Visible="false" Text="Position: " />
+                <td Align="Right" >
+                Have you ever been convicted of, or plead guilty to child abuse?&nbsp;&nbsp;
                 </td>
                 <td>
-                <asp:TextBox ID="txt_position" runat="server" columns="100" Width="400px" Visible="false"></asp:TextBox>
+                <asp:DropDownList runat="server" ID="yn_childabuse" Width="60px">
+                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Value="Y">Yes</asp:ListItem>
+                	<asp:ListItem Value="N">No</asp:ListItem>
+                </asp:DropDownList>
                 </td>
                 </tr>
-
+                <tr>
+                <td Align="Right" >
+                Have you ever been convicted of, or plead guilty to any sex offense?&nbsp;&nbsp;
+                </td>
+                <td>
+                <asp:DropDownList runat="server" ID="yn_sexoffense" Width="60px">
+                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Value="Y">Yes</asp:ListItem>
+                	<asp:ListItem Value="N">No</asp:ListItem>
+                </asp:DropDownList>
+                </td>
+                </tr>
+                <tr>
+                <td Align="Right" >
+                Have you ever been identified as a sex offender?&nbsp;&nbsp;
+                </td>
+                <td>
+                <asp:DropDownList runat="server" ID="yn_sexoffender" Width="60px">
+                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Value="Y">Yes</asp:ListItem>
+                	<asp:ListItem Value="N">No</asp:ListItem>
+                </asp:DropDownList>
+                </td>
+                </tr>
                 </table>
-            <br />
-            <b>Please read the following carefully before signing this application:</b><br />
+                <br />
+
+                <table>
+                <tr>
+                <td Align="Right" >
+                Do you have a driver's license?&nbsp;&nbsp;
+                </td>
+                <td>
+                <asp:DropDownList runat="server" ID="yn_license" Width="60px">
+                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Value="Y">Yes</asp:ListItem>
+                	<asp:ListItem Value="N">No</asp:ListItem>
+                </asp:DropDownList>
+                </td>
+                </tr>
+                <tr>
+                <td Align="Right" >
+                Do you have a car available for transporting others?&nbsp;&nbsp;
+                </td>
+                <td>
+                <asp:DropDownList runat="server" ID="yn_car" Width="60px">
+                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Value="Y">Yes</asp:ListItem>
+                	<asp:ListItem Value="N">No</asp:ListItem>
+                </asp:DropDownList>
+                </td>
+                </tr>
+                <tr>
+                <td Align="Right" >
+                Do you have driver's insurance?&nbsp;&nbsp;
+                </td>
+                <td>
+                <asp:DropDownList runat="server" ID="yn_insurance" Width="60px">
+                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Value="Y">Yes</asp:ListItem>
+                	<asp:ListItem Value="N">No</asp:ListItem>
+                </asp:DropDownList>
+                </td>
+                </tr>
+                </table>
+                <br />
+
+            <i><b>Please read the following carefully before signing this application:</b></i><br />
             I understand that this is an application for and not a commitment or promise of volunteer opportunity.
             I certify that I have and will provide information throughout the selection process, including on this application for a volunteer position and in
             interviews with KEC, that is true, correct and complete to the best of my knowledge. I certify that I have and will answer all questions to the
@@ -427,7 +581,7 @@ End Sub
             may be cause for my immediate rejection as an applicant for a volunteer position with KEC or my termination as a volunteer.
             <br /><br />
             <asp:Label id="ErrorMsg" Runat="Server" Font-Size="12pt" Font-Bold="True" ForeColor="#FF0000" Visible="false" />
-             <asp:CheckBox ID="certification" runat="server" AutoPostBack="True" OnCheckedChanged="CertifyOK" Text="&nbsp; By checking this box I certify that I am over age 18 and that I will be the responsible party for this grant."></asp:CheckBox>
+             <asp:CheckBox ID="certification" runat="server" AutoPostBack="True" OnCheckedChanged="CertifyOK" Text="&nbsp; By checking this box I certify that I have read and agree to the above statement."></asp:CheckBox>
             <br /><br />
             <asp:Button ID="SubmitButton" Text="Submit Application" OnClick="Submit_Button" Runat="Server" Enabled="false" />
             <br /><br />
