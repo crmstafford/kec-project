@@ -16,6 +16,16 @@
 
  <script Runat="Server" language="vbscript">
 
+     Sub AskCrime(ByVal Src As Object, ByVal Args As EventArgs)
+         If yn_crime.SelectedItem.Value = "Y" Then
+             txt_crime.Visible = "true"
+             label_crime.Visible = "true"
+         Else
+             txt_crime.Visible = "false"
+             label_crime.Visible = "false"
+         End If
+     End Sub
+     
      Sub Submit_Button(ByVal Src As Object, ByVal Args As EventArgs)       
          ErrorMsg.Text = ""
          ErrorMsg.Visible = False
@@ -24,62 +34,62 @@
          Message.Text = "<p>Selected Item(s):</p>"
          For i = 0 To CBKec.Items.Count - 1
              If CBKec.Items(i).Selected Then
-                 Message.Text += CBKec.Items(i).Value + " "
+                 Message.Text += "," + CBKec.Items(i).Value
              End If
          Next
          For i = 0 To CBExper.Items.Count - 1
              If CBExper.Items(i).Selected Then
-                 Message.Text += CBExper.Items(i).Value + " "
+                 Message.Text += "," + CBExper.Items(i).Value
              End If
          Next
          For i = 0 To CBConst.Items.Count - 1
              If CBConst.Items(i).Selected Then
-                 Message.Text += CBConst.Items(i).Value + " "
+                 Message.Text += "," + CBConst.Items(i).Value
              End If
          Next
          For i = 0 To CBEnergy.Items.Count - 1
              If CBEnergy.Items(i).Selected Then
-                 Message.Text += CBEnergy.Items(i).Value + " "
+                 Message.Text += "," + CBEnergy.Items(i).Value
              End If
          Next
          For i = 0 To CBHealth.Items.Count - 1
              If CBHealth.Items(i).Selected Then
-                 Message.Text += CBHealth.Items(i).Value + " "
+                 Message.Text += "," + CBHealth.Items(i).Value
              End If
          Next
          For i = 0 To CBScience.Items.Count - 1
              If CBScience.Items(i).Selected Then
-                 Message.Text += CBScience.Items(i).Value + " "
+                 Message.Text += "," + CBScience.Items(i).Value
              End If
          Next
          For i = 0 To CBEnviron.Items.Count - 1
              If CBEnviron.Items(i).Selected Then
-                 Message.Text += CBEnviron.Items(i).Value + " "
+                 Message.Text += "," + CBEnviron.Items(i).Value
              End If
          Next
          For i = 0 To CBMarine.Items.Count - 1
              If CBMarine.Items(i).Selected Then
-                 Message.Text += CBMarine.Items(i).Value + " "
+                 Message.Text += "," + CBMarine.Items(i).Value
              End If
          Next
          For i = 0 To CBBiology.Items.Count - 1
              If CBBiology.Items(i).Selected Then
-                 Message.Text += CBBiology.Items(i).Value + " "
+                 Message.Text += "," + CBBiology.Items(i).Value
              End If
          Next
          For i = 0 To CBGarden.Items.Count - 1
              If CBGarden.Items(i).Selected Then
-                 Message.Text += CBGarden.Items(i).Value + " "
+                 Message.Text += "," + CBGarden.Items(i).Value
              End If
          Next
          For i = 0 To CBArts.Items.Count - 1
              If CBArts.Items(i).Selected Then
-                 Message.Text += CBArts.Items(i).Value + " "
+                 Message.Text += "," + CBArts.Items(i).Value
              End If
          Next
          For i = 0 To CBOutdoors.Items.Count - 1
              If CBOutdoors.Items(i).Selected Then
-                 Message.Text += CBOutdoors.Items(i).Value + " "
+                 Message.Text += "," + CBOutdoors.Items(i).Value
              End If
          Next
 
@@ -95,7 +105,8 @@
                  txt_addr1.Text & "," & txt_addr2.Text & "," & _
                  txt_city.Text & "," & txt_state.Text & "," & txt_zip.Text & "," & _
                  txt_email.Text & "," & _
-                 txt_primphone.Text & "," & txt_altphone.Text & ","
+                 txt_primphone.Text & "," & txt_altphone.Text
+             objMail.Body += Message.Text
              objMail.Send()
 
              '             Message.Text = "Thank you, your volunteer application has been submitted<br><br>"
@@ -272,7 +283,7 @@
                 <tr><td>&nbsp;</td></tr>
                 </table>
 
-                <b>Education/Skills/Talent/Opportunity</b><br />
+                <b>EDUCATION/SKILLS/TALENT/OPPORTUNITY</b><br />
                 Related education, skill, talent or opportunity.  Please check all that apply.<br /><br />
                 <table width="100%">
                 <tr>
@@ -435,7 +446,7 @@
                 </table>
                 <br /><br />
 
-                <b>Employment</b><br />
+                <b>EMPLOYMENT</b><br />
                 Please enter information on your current or most recent employer.<br />
                 <table>
                 <tr>
@@ -471,26 +482,16 @@
                 <table>
                 <tr>
                 <td Align="Right" >
-                Have you ever been convicted of a crime?&nbsp;&nbsp;
-                </td>
-                <td>
-                <asp:DropDownList runat="server" ID="yn_crime" Width="60px">
-                    <asp:ListItem Text=" " Value=""/>
-                    <asp:ListItem Value="Y">Yes</asp:ListItem>
-                	<asp:ListItem Value="N">No</asp:ListItem>
-                </asp:DropDownList>
-                </td>
-                </tr>
-                <tr>
-                <td Align="Right" >
                 Have you ever been convicted of, or plead guilty to domestic violence?&nbsp;&nbsp;
                 </td>
                 <td>
                 <asp:DropDownList runat="server" ID="yn_domestic" Width="60px">
-                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Text="" Value=""/>
                     <asp:ListItem Value="Y">Yes</asp:ListItem>
                 	<asp:ListItem Value="N">No</asp:ListItem>
                 </asp:DropDownList>
+
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator23" runat="server" ControlToValidate="yn_domestic" ErrorMessage="<br>**This must be answered" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
                 </td>
                 </tr>
                 <tr>
@@ -499,10 +500,11 @@
                 </td>
                 <td>
                 <asp:DropDownList runat="server" ID="yn_childabuse" Width="60px">
-                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Text="" Value=""/>
                     <asp:ListItem Value="Y">Yes</asp:ListItem>
                 	<asp:ListItem Value="N">No</asp:ListItem>
                 </asp:DropDownList>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator22" runat="server" ControlToValidate="yn_childabuse" ErrorMessage="<br>**This must be answered" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
                 </td>
                 </tr>
                 <tr>
@@ -511,10 +513,12 @@
                 </td>
                 <td>
                 <asp:DropDownList runat="server" ID="yn_sexoffense" Width="60px">
-                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Text="" Value=""/>
                     <asp:ListItem Value="Y">Yes</asp:ListItem>
                 	<asp:ListItem Value="N">No</asp:ListItem>
                 </asp:DropDownList>
+
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator21" runat="server" ControlToValidate="yn_sexoffense" ErrorMessage="<br>**This must be answered" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
                 </td>
                 </tr>
                 <tr>
@@ -523,14 +527,33 @@
                 </td>
                 <td>
                 <asp:DropDownList runat="server" ID="yn_sexoffender" Width="60px">
-                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Text="" Value=""/>
                     <asp:ListItem Value="Y">Yes</asp:ListItem>
                 	<asp:ListItem Value="N">No</asp:ListItem>
                 </asp:DropDownList>
+
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ControlToValidate="yn_sexoffender" ErrorMessage="<br>**This must be answered" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
+                </td>
+                </tr>
+                <tr>
+                <td Align="Right" >
+                Have you ever been convicted of any crime?&nbsp;&nbsp;
+                </td>
+                <td>
+                <asp:DropDownList runat="server" ID="yn_crime" Width="60px" AutoPostBack="True"  OnSelectedIndexChanged="AskCrime">
+                    <asp:ListItem Text="" Value=""/>
+                    <asp:ListItem Value="Y">Yes</asp:ListItem>
+                	<asp:ListItem Value="N">No</asp:ListItem>
+                </asp:DropDownList>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" ControlToValidate="yn_crime" ErrorMessage="<br>**This must be answered" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
                 </td>
                 </tr>
                 </table>
+                <asp:Label ID="label_crime" runat="server" Visible="false" Text="If Yes, please explain the nature of the crime and the date of the conviction and disposition.<br />
+                [Conviction of a crime is not an automatic disqualification for volunteer work.]" />
                 <br />
+                <asp:TextBox ID="txt_crime" runat="server" columns="100" Width="540px"  TextMode="MultiLine" Rows="4" Visible="false"></asp:TextBox>
+                <br /><br /><br />
 
                 <table>
                 <tr>
@@ -539,7 +562,7 @@
                 </td>
                 <td>
                 <asp:DropDownList runat="server" ID="yn_license" Width="60px">
-                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Text="" Value=""/>
                     <asp:ListItem Value="Y">Yes</asp:ListItem>
                 	<asp:ListItem Value="N">No</asp:ListItem>
                 </asp:DropDownList>
@@ -551,7 +574,7 @@
                 </td>
                 <td>
                 <asp:DropDownList runat="server" ID="yn_car" Width="60px">
-                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Text="" Value=""/>
                     <asp:ListItem Value="Y">Yes</asp:ListItem>
                 	<asp:ListItem Value="N">No</asp:ListItem>
                 </asp:DropDownList>
@@ -563,7 +586,7 @@
                 </td>
                 <td>
                 <asp:DropDownList runat="server" ID="yn_insurance" Width="60px">
-                    <asp:ListItem Text=" " Value=""/>
+                    <asp:ListItem Text="" Value=""/>
                     <asp:ListItem Value="Y">Yes</asp:ListItem>
                 	<asp:ListItem Value="N">No</asp:ListItem>
                 </asp:DropDownList>
@@ -571,6 +594,71 @@
                 </tr>
                 </table>
                 <br />
+
+                <b>REFERENCES</b><br />
+                Please list three people who know you well and can attest to your character, skills and dependability.  Include your current
+                or most recent employer.<br />
+                <table>
+                <tr>
+                <td></td>
+                <td>Name/Organization</td>
+                <td>Relationship to You</td>
+                <td>Phone or Email</td>
+                <td>Length of relationship</td>
+                </tr>
+                <tr>
+                <td>1.</td>
+                <td>
+                    <asp:TextBox ID="ref_name1" runat="server" Width="180px" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="ref_name1" ErrorMessage="<br>**Reference name is required" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
+                </td>
+                <td>
+                    <asp:TextBox ID="ref_reln1" runat="server" Width="150px" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="ref_reln1" ErrorMessage="<br>**Relationship is required" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
+                </td>
+                <td>
+                    <asp:TextBox ID="ref_phone1" runat="server" Width="110px" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="ref_phone1" ErrorMessage="<br>**Contact information is required" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
+                </td>
+                <td>
+                    <asp:TextBox ID="ref_length1" runat="server" Width="60px" />
+                </td>
+                </tr>
+                <tr>
+                <td>2.</td>
+                <td>
+                    <asp:TextBox ID="ref_name2" runat="server" Width="180px" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="ref_name2" ErrorMessage="<br>**Reference name is required" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
+                </td>
+                <td>
+                <asp:TextBox ID="ref_reln2" runat="server" Width="150px" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="ref_reln2" ErrorMessage="<br>**Relationship is required" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
+                </td>
+                <td>
+                <asp:TextBox ID="ref_phone2" runat="server" Width="110px" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="ref_phone2" ErrorMessage="<br>**Contact information is required" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
+                </td>
+                <td>
+                <asp:TextBox ID="ref_length2" runat="server" Width="60px" />
+                </td>
+                </tr>
+                <tr>
+                <td>3.</td>
+                <td>
+                    <asp:TextBox ID="ref_name3" runat="server" Width="180px" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="ref_name3" ErrorMessage="<br>**Reference name is required" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
+                </td>
+                <td><asp:TextBox ID="ref_reln3" runat="server" Width="150px" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="ref_reln3" ErrorMessage="<br>**Relationship is required" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
+                </td>
+                <td><asp:TextBox ID="ref_phone3" runat="server" Width="110px" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" ControlToValidate="ref_phone3" ErrorMessage="<br>**Contact information is required" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
+                </td>
+                <td><asp:TextBox ID="ref_length3" runat="server" Width="60px" />
+                </td>
+                </tr>
+                </table>
+                <br /><br />
 
             <i><b>Please read the following carefully before signing this application:</b></i><br />
             I understand that this is an application for and not a commitment or promise of volunteer opportunity.
@@ -580,9 +668,27 @@
             position. I understand that information contained on my application will be verified by KEC.  I understand that misrepresentations or omissions
             may be cause for my immediate rejection as an applicant for a volunteer position with KEC or my termination as a volunteer.
             <br /><br />
-            <asp:Label id="ErrorMsg" Runat="Server" Font-Size="12pt" Font-Bold="True" ForeColor="#FF0000" Visible="false" />
-             <asp:CheckBox ID="certification" runat="server" AutoPostBack="True" OnCheckedChanged="CertifyOK" Text="&nbsp; By checking this box I certify that I have read and agree to the above statement."></asp:CheckBox>
+            <asp:CheckBox ID="certification" runat="server" AutoPostBack="True" OnCheckedChanged="CertifyOK" Text="&nbsp; By checking this box I certify that I have read and agree to the above statement."></asp:CheckBox>
             <br /><br />
+            <table>
+            <tr>
+            <td align="right">Full name:&nbsp</td>
+            <td>
+                <asp:TextBox ID="txt_signname" runat="server" Width="450px" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txt_signname" ErrorMessage="<br>**Full name/signature is required" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
+            </td>
+            </tr>
+            <tr>
+            <td align="right">Today's date:&nbsp;</td>
+            <td>
+                <asp:TextBox ID="txt_signdate" runat="server" Width="200px" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txt_signdate" ErrorMessage="<br>**Today's date is required" Display="Dynamic" ForeColor="#FF0000" ></asp:RequiredFieldValidator>
+            </td>
+            </tr>
+            </table>
+            <br />
+            <asp:Label id="ErrorMsg" Runat="Server" Font-Size="12pt" Font-Bold="True" ForeColor="#FF0000" Visible="false" />
+            <br />
             <asp:Button ID="SubmitButton" Text="Submit Application" OnClick="Submit_Button" Runat="Server" Enabled="false" />
             <br /><br />
             <asp:Label id="Message" Runat="Server" Font-Size="12pt" Font-Bold="True" ForeColor="#0000FF" />
