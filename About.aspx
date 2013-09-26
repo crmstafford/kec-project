@@ -29,9 +29,7 @@
     </strong>
     <br/><br/>
     <span class="style12i">
-    <b>To inspire, educate and connect youth to lead a cultural transformation that optimizes health and sustains the environment.
-    <br /><br />
-    KEC will empower youth by using technology and cross sector public and private collaborations to provide resources, imagination and expertise.</b>
+    <b>To empower youth to lead a cultural transformation that optimizes health and sustains the environment.</b>
     </span>
     <br/>
 </asp:Content>
@@ -50,7 +48,7 @@
         <br /><br />
         <span class="style12i">
             <i><b>
-             Youth empowered to transform the health of communities and the planet. 
+             Youth transforming the health of communities and the planet. 
             </b></i>
         </span>
         <br /><br /><br />
@@ -76,7 +74,7 @@
 
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent"> 
 
-                <iframe width="545" height="310" src="//www.youtube.com/embed/kwDaVuTIrow?rel=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="545" height="310" src="http://www.youtube.com/embed/kwDaVuTIrow?rel=0" frameborder="0" allowfullscreen></iframe>
         <br /><br />
 
        <span class="h1green">
@@ -113,6 +111,7 @@
         <li>We believe in challenging the status quo.</li>
         <li>We believe in thinking differently.</li>
         <li>We believe in connecting youth to the best teachers and best content in the world so they can learn without limits.</li>
+        <li>We believe healthy people, create healthy communities, creating a healthy planet.</li>
         </ul>
         </span>
         <br />
