@@ -45,147 +45,146 @@
      End Sub
      
      Sub Submit_Button(ByVal Src As Object, ByVal Args As EventArgs)       
-         ErrorMsg.Text = ""
-         ErrorMsg.Visible = False
-         
          Dim i As Integer
          Message.Text = ""
-         For i = 0 To CBKec.Items.Count - 1
-             If CBKec.Items(i).Selected Then
-                 Message.Text += CBKec.Items(i).Value + ","
-             Else
-                 Message.Text += ","
-             End If
-         Next
-         For i = 0 To CBExper.Items.Count - 1
-             If CBExper.Items(i).Selected Then
-                 Message.Text += CBExper.Items(i).Value + ","
-             Else
-                 Message.Text += ","
-             End If
-         Next
-         For i = 0 To CBConst.Items.Count - 1
-             If CBConst.Items(i).Selected Then
-                 Message.Text += CBConst.Items(i).Value + ","
-             Else
-                 Message.Text += ","
-             End If
-         Next
-         For i = 0 To CBEnergy.Items.Count - 1
-             If CBEnergy.Items(i).Selected Then
-                 Message.Text += CBEnergy.Items(i).Value + ","
-             Else
-                 Message.Text += ","
-             End If
-         Next
-         For i = 0 To CBHealth.Items.Count - 1
-             If CBHealth.Items(i).Selected Then
-                 Message.Text += CBHealth.Items(i).Value + ","
-             Else
-                 Message.Text += ","
-             End If
-         Next
-         For i = 0 To CBScience.Items.Count - 1
-             If CBScience.Items(i).Selected Then
-                 Message.Text += CBScience.Items(i).Value + ","
-             Else
-                 Message.Text += ","
-             End If
-         Next
-         For i = 0 To CBEnviron.Items.Count - 1
-             If CBEnviron.Items(i).Selected Then
-                 Message.Text += CBEnviron.Items(i).Value + ","
-             Else
-                 Message.Text += ","
-             End If
-         Next
-         For i = 0 To CBMarine.Items.Count - 1
-             If CBMarine.Items(i).Selected Then
-                 Message.Text += CBMarine.Items(i).Value + ","
-             Else
-                 Message.Text += ","
-             End If
-         Next
-         For i = 0 To CBBiology.Items.Count - 1
-             If CBBiology.Items(i).Selected Then
-                 Message.Text += CBBiology.Items(i).Value + ","
-             Else
-                 Message.Text += ","
-             End If
-         Next
-         For i = 0 To CBGarden.Items.Count - 1
-             If CBGarden.Items(i).Selected Then
-                 Message.Text += CBGarden.Items(i).Value + ","
-             Else
-                 Message.Text += ","
-             End If
-         Next
-         For i = 0 To CBArts.Items.Count - 1
-             If CBArts.Items(i).Selected Then
-                 Message.Text += CBArts.Items(i).Value + ","
-             Else
-                 Message.Text += ","
-             End If
-         Next
-         For i = 0 To CBOutdoors.Items.Count - 1
-             If CBOutdoors.Items(i).Selected Then
-                 Message.Text += CBOutdoors.Items(i).Value + ","
-             Else
-                 Message.Text += ","
-             End If
-         Next
+         ErrorMsg.Text = ""
+         ErrorMsg.Visible = False
 
-         Try
-             Dim timeNow As String = DateTime.Now.ToString()
-             Dim dbMail As MailSender = New MailSender()
-             dbMail.Host = "smtp.s4software.com"
-             dbMail.From = "volunteer@kidsecoclub.org"
-             dbMail.Subject = "Volunteer Application: " & txt_firstName.Text & " " & txt_lastName.Text
-             dbMail.AddAddress("volunteerdb@kidsecoclub.org")
-             dbMail.Body = txt_firstName.Text & "," & txt_initial.Text & "," & txt_lastName.Text & "," & _
-                 txt_addr1.Text & "," & txt_addr2.Text & "," & _
-                 txt_city.Text & "," & txt_state.Text & "," & txt_zip.Text & "," & _
-                 txt_email.Text & "," & _
-                 txt_primphone.Text & "," & cb_primtxtmsg.Checked & "," & txt_altphone.Text & "," & _
-                 ref_name1.Text & "," & ref_reln1.Text & "," & ref_phone1.Text & "," & ref_length1.Text & "," & _
-                 ref_name2.Text & "," & ref_reln2.Text & "," & ref_phone2.Text & "," & ref_length2.Text & "," & _
-                 ref_name3.Text & "," & ref_reln3.Text & "," & ref_phone3.Text & "," & ref_length3.Text & "," & _
-                 yn_license.SelectedValue & "," & yn_car.SelectedValue & "," & yn_insurance.SelectedValue & "," & _
-                 yn_domestic.SelectedValue & "," & yn_childabuse.SelectedValue & "," & yn_sexoffender.SelectedValue & "," & yn_sexoffense.SelectedValue & "," & _
-                 txt_employer.Text & "," & txt_empaddr.Text & "," & txt_title.Text & "," & txt_empdates.Text & "," & cb_advempl.Checked & "," & _
-                 txt_signname.Text & "," & txt_signdate.Text & "," & timeNow
-             dbMail.Body += ",>," + Message.Text + ">," + txt_crime.Text
-             dbMail.Send()
-
-             Dim objMail As MailSender = New MailSender()
-             objMail.Host = "smtp.s4software.com"
-             objMail.From = "volunteer@kidsecoclub.org"
-             objMail.Subject = "Volunteer Application: " & txt_firstName.Text & " " & txt_lastName.Text
-             objMail.AddAddress("volunteer@kidsecoclub.org")
-             objMail.Body = txt_firstName.Text & " " & txt_initial.Text & " " & txt_lastName.Text & Chr(13) & Chr(10) & _
-                 txt_addr1.Text & Chr(13) & Chr(10) & txt_addr2.Text & Chr(13) & Chr(10) & _
-                 txt_city.Text & " " & txt_state.Text & " " & txt_zip.Text & Chr(13) & Chr(10) & _
-                 txt_email.Text & Chr(13) & Chr(10) & _
-                 txt_primphone.Text & " " & cb_primtxtmsg.Checked & " " & txt_altphone.Text & Chr(13) & Chr(10) & _
-                 "Submitted at: " & timeNow
-             objMail.Send()
-             Message.Text = "Thank you, your volunteer application has been submitted.<br><br>"
-             SubmitButton.Enabled = "false"
-         Catch ex As Exception
-             ErrorMsg.Text = "Error " + ex.Message + "<br><br>"
-             ErrorMsg.Visible = True
-         End Try
-     End Sub
-          
-     Sub CrimeChg(ByVal Src As Object, ByVal Args As EventArgs)
          If yn_childabuse.SelectedValue = "Y" Or yn_domestic.SelectedValue = "Y" Or yn_sexoffender.SelectedValue = "Y" Or yn_sexoffense.SelectedValue = "Y" Then
              SubmitButton.Enabled = "false"
              ErrorMsg.Text = "We are sorry but you are not eligible to be a KEC volunteer.<br /><br />"
              ErrorMsg.Visible = True
          Else
-             SubmitButton.Enabled = "true"
-             ErrorMsg.Visible = False
+             For i = 0 To CBKec.Items.Count - 1
+                 If CBKec.Items(i).Selected Then
+                     Message.Text += CBKec.Items(i).Value + ","
+                 Else
+                     Message.Text += ","
+                 End If
+             Next
+             For i = 0 To CBExper.Items.Count - 1
+                 If CBExper.Items(i).Selected Then
+                     Message.Text += CBExper.Items(i).Value + ","
+                 Else
+                     Message.Text += ","
+                 End If
+             Next
+             For i = 0 To CBConst.Items.Count - 1
+                 If CBConst.Items(i).Selected Then
+                     Message.Text += CBConst.Items(i).Value + ","
+                 Else
+                     Message.Text += ","
+                 End If
+             Next
+             For i = 0 To CBEnergy.Items.Count - 1
+                 If CBEnergy.Items(i).Selected Then
+                     Message.Text += CBEnergy.Items(i).Value + ","
+                 Else
+                     Message.Text += ","
+                 End If
+             Next
+             For i = 0 To CBHealth.Items.Count - 1
+                 If CBHealth.Items(i).Selected Then
+                     Message.Text += CBHealth.Items(i).Value + ","
+                 Else
+                     Message.Text += ","
+                 End If
+             Next
+             For i = 0 To CBScience.Items.Count - 1
+                 If CBScience.Items(i).Selected Then
+                     Message.Text += CBScience.Items(i).Value + ","
+                 Else
+                     Message.Text += ","
+                 End If
+             Next
+             For i = 0 To CBEnviron.Items.Count - 1
+                 If CBEnviron.Items(i).Selected Then
+                     Message.Text += CBEnviron.Items(i).Value + ","
+                 Else
+                     Message.Text += ","
+                 End If
+             Next
+             For i = 0 To CBMarine.Items.Count - 1
+                 If CBMarine.Items(i).Selected Then
+                     Message.Text += CBMarine.Items(i).Value + ","
+                 Else
+                     Message.Text += ","
+                 End If
+             Next
+             For i = 0 To CBBiology.Items.Count - 1
+                 If CBBiology.Items(i).Selected Then
+                     Message.Text += CBBiology.Items(i).Value + ","
+                 Else
+                     Message.Text += ","
+                 End If
+             Next
+             For i = 0 To CBGarden.Items.Count - 1
+                 If CBGarden.Items(i).Selected Then
+                     Message.Text += CBGarden.Items(i).Value + ","
+                 Else
+                     Message.Text += ","
+                 End If
+             Next
+             For i = 0 To CBArts.Items.Count - 1
+                 If CBArts.Items(i).Selected Then
+                     Message.Text += CBArts.Items(i).Value + ","
+                 Else
+                     Message.Text += ","
+                 End If
+             Next
+             For i = 0 To CBOutdoors.Items.Count - 1
+                 If CBOutdoors.Items(i).Selected Then
+                     Message.Text += CBOutdoors.Items(i).Value + ","
+                 Else
+                     Message.Text += ","
+                 End If
+             Next
+
+             Try
+                 Dim timeNow As String = DateTime.Now.ToString()
+                 Dim dbMail As MailSender = New MailSender()
+                 dbMail.Host = "smtp.s4software.com"
+                 dbMail.From = "volunteer@kidsecoclub.org"
+                 dbMail.Subject = "Volunteer Application: " & txt_firstName.Text & " " & txt_lastName.Text
+                 dbMail.AddAddress("volunteerdb@kidsecoclub.org")
+                 dbMail.Body = txt_firstName.Text & "," & txt_initial.Text & "," & txt_lastName.Text & "," & _
+                     txt_addr1.Text & "," & txt_addr2.Text & "," & _
+                     txt_city.Text & "," & txt_state.Text & "," & txt_zip.Text & "," & _
+                     txt_email.Text & "," & _
+                     txt_primphone.Text & "," & cb_primtxtmsg.Checked & "," & txt_altphone.Text & "," & _
+                     ref_name1.Text & "," & ref_reln1.Text & "," & ref_phone1.Text & "," & ref_length1.Text & "," & _
+                     ref_name2.Text & "," & ref_reln2.Text & "," & ref_phone2.Text & "," & ref_length2.Text & "," & _
+                     ref_name3.Text & "," & ref_reln3.Text & "," & ref_phone3.Text & "," & ref_length3.Text & "," & _
+                     yn_license.SelectedValue & "," & yn_car.SelectedValue & "," & yn_insurance.SelectedValue & "," & _
+                     yn_domestic.SelectedValue & "," & yn_childabuse.SelectedValue & "," & yn_sexoffender.SelectedValue & "," & yn_sexoffense.SelectedValue & "," & _
+                     txt_employer.Text & "," & txt_empaddr.Text & "," & txt_title.Text & "," & txt_empdates.Text & "," & cb_advempl.Checked & "," & _
+                     txt_signname.Text & "," & txt_signdate.Text & "," & timeNow
+                 dbMail.Body += ",>," + Message.Text + ">," + txt_crime.Text
+                 dbMail.Send()
+
+                 Dim objMail As MailSender = New MailSender()
+                 objMail.Host = "smtp.s4software.com"
+                 objMail.From = "volunteer@kidsecoclub.org"
+                 objMail.Subject = "Volunteer Application: " & txt_firstName.Text & " " & txt_lastName.Text
+                 objMail.AddAddress("volunteer@kidsecoclub.org")
+                 objMail.Body = txt_firstName.Text & " " & txt_initial.Text & " " & txt_lastName.Text & Chr(13) & Chr(10) & _
+                     txt_addr1.Text & Chr(13) & Chr(10) & txt_addr2.Text & Chr(13) & Chr(10) & _
+                     txt_city.Text & " " & txt_state.Text & " " & txt_zip.Text & Chr(13) & Chr(10) & _
+                     txt_email.Text & Chr(13) & Chr(10) & _
+                     txt_primphone.Text & " " & cb_primtxtmsg.Checked & " " & txt_altphone.Text & Chr(13) & Chr(10) & _
+                     "Submitted at: " & timeNow
+                 objMail.Send()
+                 Message.Text = "Thank you, your volunteer application has been submitted.<br><br>"
+                 SubmitButton.Enabled = "false"
+             Catch ex As Exception
+                 ErrorMsg.Text = "Error " + ex.Message + "<br><br>"
+                 ErrorMsg.Visible = True
+             End Try
          End If
+     End Sub
+          
+     Sub CrimeChg(ByVal Src As Object, ByVal Args As EventArgs)
+
      End Sub
           
      Sub CertifyOK(ByVal Src As Object, ByVal Args As EventArgs)
@@ -610,7 +609,7 @@
                 * Have you ever been convicted of, or plead guilty to domestic violence?&nbsp;&nbsp;
                 </td>
                 <td>
-                <asp:DropDownList runat="server" ID="yn_domestic" Width="60px" AutoPostBack="True"  OnSelectedIndexChanged="CrimeChg">
+                <asp:DropDownList runat="server" ID="yn_domestic" Width="60px">
                     <asp:ListItem Text="" Value=""/>
                     <asp:ListItem Value="Y">Yes</asp:ListItem>
                 	<asp:ListItem Value="N">No</asp:ListItem>
@@ -624,7 +623,7 @@
                 * Have you ever been convicted of, or plead guilty to child abuse?&nbsp;&nbsp;
                 </td>
                 <td>
-                <asp:DropDownList runat="server" ID="yn_childabuse" Width="60px" AutoPostBack="True"  OnSelectedIndexChanged="CrimeChg">
+                <asp:DropDownList runat="server" ID="yn_childabuse" Width="60px">
                     <asp:ListItem Text="" Value=""/>
                     <asp:ListItem Value="Y">Yes</asp:ListItem>
                 	<asp:ListItem Value="N">No</asp:ListItem>
@@ -637,7 +636,7 @@
                 * Have you ever been convicted of, or plead guilty to any sex offense?&nbsp;&nbsp;
                 </td>
                 <td>
-                <asp:DropDownList runat="server" ID="yn_sexoffense" Width="60px" AutoPostBack="True"  OnSelectedIndexChanged="CrimeChg">
+                <asp:DropDownList runat="server" ID="yn_sexoffense" Width="60px">
                     <asp:ListItem Text="" Value=""/>
                     <asp:ListItem Value="Y">Yes</asp:ListItem>
                 	<asp:ListItem Value="N">No</asp:ListItem>
@@ -651,7 +650,7 @@
                 * Have you ever been identified as a sex offender?&nbsp;&nbsp;
                 </td>
                 <td>
-                <asp:DropDownList runat="server" ID="yn_sexoffender" Width="60px" AutoPostBack="True"  OnSelectedIndexChanged="CrimeChg">
+                <asp:DropDownList runat="server" ID="yn_sexoffender" Width="60px">
                     <asp:ListItem Text="" Value=""/>
                     <asp:ListItem Value="Y">Yes</asp:ListItem>
                 	<asp:ListItem Value="N">No</asp:ListItem>
