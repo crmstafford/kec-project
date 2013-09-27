@@ -136,13 +136,13 @@
          Next
 
          Try
-             Dim objMail As MailSender = New MailSender()
              Dim timeNow As String = DateTime.Now.ToString()
-             objMail.Host = "smtp.s4software.com"
-             objMail.From = "volunteer@kidsecoclub.org"
-             objMail.Subject = "Volunteer Application: " & txt_firstName.Text & " " & txt_lastName.Text
-             objMail.AddAddress("volunteer@kidsecoclub.org")
-             objMail.Body = txt_firstName.Text & "," & txt_initial.Text & "," & txt_lastName.Text & "," & _
+             Dim dbMail As MailSender = New MailSender()
+             dbMail.Host = "smtp.s4software.com"
+             dbMail.From = "volunteer@kidsecoclub.org"
+             dbMail.Subject = "Volunteer Application: " & txt_firstName.Text & " " & txt_lastName.Text
+             dbMail.AddAddress("volunteerdb@kidsecoclub.org")
+             dbMail.Body = txt_firstName.Text & "," & txt_initial.Text & "," & txt_lastName.Text & "," & _
                  txt_addr1.Text & "," & txt_addr2.Text & "," & _
                  txt_city.Text & "," & txt_state.Text & "," & txt_zip.Text & "," & _
                  txt_email.Text & "," & _
@@ -154,8 +154,21 @@
                  yn_domestic.SelectedValue & "," & yn_childabuse.SelectedValue & "," & yn_sexoffender.SelectedValue & "," & yn_sexoffense.SelectedValue & "," & _
                  txt_employer.Text & "," & txt_empaddr.Text & "," & txt_title.Text & "," & txt_empdates.Text & "," & cb_advempl.Checked & "," & _
                  txt_signname.Text & "," & txt_signdate.Text & "," & timeNow
-             objMail.Body += ",>," + Message.Text + ">," + txt_crime.Text
-             ' objMail.Send()
+             dbMail.Body += ",>," + Message.Text + ">," + txt_crime.Text
+             dbMail.Send()
+
+             Dim objMail As MailSender = New MailSender()
+             objMail.Host = "smtp.s4software.com"
+             objMail.From = "volunteer@kidsecoclub.org"
+             objMail.Subject = "Volunteer Application: " & txt_firstName.Text & " " & txt_lastName.Text
+             objMail.AddAddress("volunteer@kidsecoclub.org")
+             objMail.Body = txt_firstName.Text & " " & txt_initial.Text & " " & txt_lastName.Text & Chr(13) & Chr(10) & _
+                 txt_addr1.Text & Chr(13) & Chr(10) & txt_addr2.Text & Chr(13) & Chr(10) & _
+                 txt_city.Text & " " & txt_state.Text & " " & txt_zip.Text & Chr(13) & Chr(10) & _
+                 txt_email.Text & Chr(13) & Chr(10) & _
+                 txt_primphone.Text & " " & cb_primtxtmsg.Checked & " " & txt_altphone.Text & Chr(13) & Chr(10) & _
+                 "Submitted at: " & timeNow
+             objMail.Send()
              Message.Text = "Thank you, your volunteer application has been submitted.<br><br>"
              SubmitButton.Enabled = "false"
          Catch ex As Exception

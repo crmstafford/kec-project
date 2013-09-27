@@ -102,8 +102,9 @@
             </tr>
             </table>
 
-            These are just a few opportunities. Contact KEC at <a href="mailto: volunteer@kidsecoclub.org" target="_blank">volunteer@kidsecoclub.org</a>
-            to discuss the possibilities. 
+            These are just a few opportunities.<br />
+            Contact KEC at <a href="mailto: volunteer@kidsecoclub.org" target="_blank">volunteer@kidsecoclub.org</a> to discuss the possibilities.<br />
+            <a href="VolunteerAppln.aspx"><i>Click here to submit a volunteer application.</i></a>
             <br /><br />
         </span>
 
