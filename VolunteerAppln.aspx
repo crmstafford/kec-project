@@ -147,7 +147,7 @@
                  dbMail.From = "volunteer@kidsecoclub.org"
                  dbMail.Subject = "Volunteer Application: " & txt_firstName.Text & " " & txt_lastName.Text
                  dbMail.AddAddress("volunteerdb@kidsecoclub.org")
-                 dbMail.Body = txt_firstName.Text & "," & txt_initial.Text & "," & txt_lastName.Text & "," & _
+                 dbMail.Body = "<Vol1>," & txt_firstName.Text & "," & txt_initial.Text & "," & txt_lastName.Text & "," & _
                      txt_addr1.Text & "," & txt_addr2.Text & "," & _
                      txt_city.Text & "," & txt_state.Text & "," & txt_zip.Text & "," & _
                      txt_email.Text & "," & _
@@ -173,6 +173,7 @@
                      txt_email.Text & Chr(13) & Chr(10) & _
                      txt_primphone.Text & " " & cb_primtxtmsg.Checked & " " & txt_altphone.Text & Chr(13) & Chr(10) & _
                      "Submitted at: " & timeNow
+                 objMail.Body += Chr(13) + Chr(10) + Message.Text + Chr(13) + Chr(10) + txt_crime.Text
                  objMail.Send()
                  Message.Text = "Thank you, your volunteer application has been submitted.<br><br>"
                  SubmitButton.Enabled = "false"
@@ -183,16 +184,14 @@
          End If
      End Sub
           
-     Sub CrimeChg(ByVal Src As Object, ByVal Args As EventArgs)
-
-     End Sub
-          
      Sub CertifyOK(ByVal Src As Object, ByVal Args As EventArgs)
          If certification.Checked = "true" Then
              SubmitButton.Enabled = "true"
          Else
              SubmitButton.Enabled = "false"
          End If
+         ErrorMsg.Text = ""
+         ErrorMsg.Visible = False
      End Sub
 </script>
 
