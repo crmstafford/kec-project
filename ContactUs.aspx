@@ -38,6 +38,9 @@
             <b>Information</b><br />
             <a href="mailto:info@kidsecoclub.org">info@kidsecoclub.org</a>
             <br /><br />
+            <b>Program coordinator</b><br />
+            <a href="mailto:zhayman@kidsecoclub.org">zhayman@kidsecoclub.org</a>
+            <br /><br />
             <b>Kids Harvest program</b><br />
             <a href="mailto:sparikh@kidsecoclub.org">sparikh@kidsecoclub.org</a>
             <br /><br />

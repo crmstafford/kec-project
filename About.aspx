@@ -74,17 +74,22 @@
 
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent"> 
 
-                <iframe width="545" height="310" src="http://www.youtube.com/embed/kwDaVuTIrow?rel=0" frameborder="0" allowfullscreen></iframe>
-        <br /><br />
-
        <span class="h1green">
-            <b>Organizational History</b>
+            <b>How We Started</b>
         </span>
         <br /><br />
+
+        <iframe width="545" height="310" src="http://www.youtube.com/embed/wOVKbntIo34?rel=0" frameborder="0" allowfullscreen></iframe>
+        <br /><br />
+
         <span class="greycontent">
-            It is 2010, a nine year old boy named Max Guinn is home sick from school asking his Mom if he can watch PG-13 movies and have a cell phone. He argues
-            he is almost ten years old and very responsible.  His Mom agrees turning ten is a big deal and asks, "Now that you are turning ten, what will you do
-            to be of service?"<br /><br />
+            It is 2010, a nine year old boy named Max Guinn is home sick from school asking his Mom if he can watch PG-13 movies and have a cell phone.
+            <a href="javascript:doNothing();" id="clickHistoryMore">&nbsp;&nbsp;<i>...Click to read more... &nbsp;&nbsp;</i></a>
+            <br />
+            <div id="historyMore">
+            He argues he is almost ten years old and very responsible.  His Mom agrees turning ten is a big deal and asks, "Now that you are turning ten, what will you do
+            to be of service?"
+            <br /><br />
             After thinking about it, Max decides he will teach his third grade class about protecting the planet. He has absolutely no idea where to start or
             what to do next. So he Googles movies on the environment and spends the next day watching Food, Inc.  and The Cove.  The films break his heart.
             Max is deeply disturbed by the condition of thousands of animals in factory farms and the slaughter of more than 20,000 dolphins and porpoises off
@@ -97,9 +102,9 @@
             Max said, "Starting KidsEcoClub isn't so impressive. KidsEcoClub depends on each of you getting into the game.  Together, we are capable of great
             things!"<br /><br />
             Along the way, Max learned one person can make a difference. Each of us can make a difference.  Together, all things are possible.  
+            </div>
             <br /><br />
         </span>
-        <br />
         <span class="h1green">
             <b>Core Beliefs</b>
         </span>
@@ -120,10 +125,13 @@
             <b>Programs</b>
         </span>
         <br /><br />
+
+        <iframe width="545" height="310" src="http://www.youtube.com/embed/kwDaVuTIrow?rel=0" frameborder="0" allowfullscreen></iframe>
+        <br /><br />
         <span class="greycontent">
             <a href="/Documents/programs_services.pdf" target="_blank"><i>Click here for our Programs and Services brochure...</i></a>
         </span>
-        <br /><br /><br />
+        <br /><br />
 <!--         
         <span class="h1green">
             <b>About KidsEcoClub</b>
@@ -202,9 +210,13 @@
            function doNothing() { }
 
            $("#Collaborators").hide();
+           $("#historyMore").hide();
 
            $("#clickMoreCollaborators").click(function () {
                $("#Collaborators").slideToggle("slow");
+           });
+           $("#clickHistoryMore").click(function () {
+               $("#historyMore").slideToggle("slow");
            });
 
         </script>
