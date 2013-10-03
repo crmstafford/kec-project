@@ -44,6 +44,48 @@
 
         <span class="h1green">
             <strong>
+            Superfood Smoothies - Give your body and brain a boost!
+            </strong>
+        </span>
+        <br /><br />
+        <img src="/images/superfoodsmoothies.jpg" style="padding-left:20px;" alt="" />
+        <br />
+        <div class="greycontent" style="text-align:justify;">
+        <b>Join Nutritionist Sara Vance and the KidsEcoClub to learn:</b>
+        <ul>
+        <li>
+        What are superfoods and why they are important for your health.
+        </li><li>
+        What the sugar roller coaster is and how to get off it
+        </li><li>
+        How you can eat a rainbow every day
+        </li><li>
+        How to make 3 delicious SUPERFOOD Smoothies that are chock full of vitamins, minerals, omega 3s, protein, electrolytes that provide lasting energy, good brain nutrients, and more!
+        </li>
+        </ul>
+        <a href="/Documents/Superfood Smoothies.pdf" target="_blank"><i>Click here to see all about the smoothies...</i></a>
+        <br /><br />
+        Dates & Locations:
+        <br />
+        <ul><li>
+        Whole Foods Market La Jolla  (October 5th)<br />
+        8825 Villa LA Jolla Dr<br />
+        La Jolla, CA<br /><br />
+        </li><li>
+        Whole Foods Market Encinitas  (October 13th)<br />
+        687 S Coast Highway 101 Ste 101<br />
+        Encinitas, CA<br /><br />
+        </li><li>
+        Whole Foods Market Hillcrest (October 19th)<br />
+        711 University Avenue<br />
+        San Diego, CA  92103<br />
+        </li>
+        </ul>
+        </div>
+        <br /><br />
+
+        <span class="h1green">
+            <strong>
             Whole Foods Market Hillcrest gives Facebook shout-out to KEC
             </strong>
         </span>
@@ -51,7 +93,7 @@
         <div class="greycontent" style="text-align:justify;">
         Sept. 13 - "During our Whole Kids Foundation fundraising campaign, we'd like to give props to the organizations that are really making a difference through
         all the San Diego Unified School District schools, Kids Eco Club is one of those organizations!"
-        </span>
+        </div>
         <br /><br /><br />
 
         <span class="h1green">
