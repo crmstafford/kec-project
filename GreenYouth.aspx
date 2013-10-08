@@ -63,7 +63,7 @@
                 <div class="slider-wrapper">
                     <div id="slider" class="nivoSlider">
                         <img src="/images/gyc/gyc-jan13.jpg" alt="" />
-                        <img src="/images/gyc/gyc11c.jpg" alt="" />
+                        <img src="/images/gyc/spencer-camera.jpg" alt="" />
                         <img src="/images/gyc/gyc-nov12.jpg" alt="" />
                         <img src="/images/gyc/gyc11b.jpg" alt="" />
                         <img src="/images/gyc/gyc11a.jpg" alt="" />

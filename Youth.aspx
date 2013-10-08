@@ -3,7 +3,7 @@
 <script runat="server">
     Protected Sub Page_PreLoad(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.PreLoad
         Dim imgBanner As Image = Master.FindControl("imgBanner")
-        imgBanner.ImageUrl = "/images/youth-banner.jpg"
+        imgBanner.ImageUrl = "/images/youth-banner1.jpg"
         imgBanner.Height = Unit.Pixel(166)
         imgBanner.Width = Unit.Pixel(1000)
     End Sub
