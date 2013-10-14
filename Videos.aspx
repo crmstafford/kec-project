@@ -110,7 +110,7 @@
     </div>
 
     <div class="videoinsert" align="center">
-        <iframe width="530" height="315" src="http://www.youtube.com/embed/h4fXnGir12k?rel=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="530" height="315" src="http://www.youtube.com/embed/tfYGI6Z6v-E?rel=0" frameborder="0" allowfullscreen></iframe>
         <div class="videotext">
             GYC member Evan L. speaks at Solana Beach Council meeting about banning single use plastic bags.<br /><br />
             Take action and sign <a href="http://www.change.org/petitions/mayor-of-san-diego-and-the-san-diego-city-council-please-ban-single-use-plastic-bags-in-san-diego" target="_blank">Evan's petition to ban single use plastic bags in San Diego.</a><br />
