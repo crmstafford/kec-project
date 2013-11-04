@@ -42,6 +42,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
 
+<%--
         <span class="h1green">
             <strong>
             Superfood Smoothies - Give your body and brain a boost!
@@ -83,6 +84,7 @@
         </ul>
         </div>
         <br /><br />
+--%>
 
         <span class="h1green">
             <strong>

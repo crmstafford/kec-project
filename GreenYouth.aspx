@@ -393,14 +393,12 @@
                             <br />
                             <asp:Image id="Image18" runat="server" imageurl="/images/gyc/sophia.jpg" height="147px" width="127" imagealign="Left" bordercolor="White" borderwidth="5px" alt="Sophia H." />
                             <b>Sophia H.</b><br />
-                            Sophia is a 14-year-old freshman at Amador Valley High School and resides in Northern California near the San Francisco bay with her family. She is a
-                            passionate leader in her community. From the time she was in fourth grade she has been motivated to learn about the world around her, specifically the
-                            environment. She has operated her very own website for nearly five years that focuses on environmental awareness and responsibility. A recipient of several
-                            awards for her citizenship and work in the community, she currently holds the position of youth adviser to the energy and environment committee under
-                            city council for her hometown, Pleasanton. Outside of environmental leadership, Sophia is a previous delegate to Model UN, in which she held the
-                            position of Deputy Secretary General. She is a current delegate of California YMCA’s Youth and Government. She has held leadership positions in school
-                            in previous years, as well. Sophia’s environmental passion is California’s emission standards and decreasing the overall pollution generated in the state.
-                            In her free time, she enjoys swimming, listening to music, public speaking, and spending time with her family and friends.
+                            Sophia is a sophomore at Amador Valley High School in the bay area. She is the youth adviser to her city's energy and environment committee as well as an
+                            avid blogger about environmental awareness and other important global issues. Sophia has spoken on advocacy at the Bay Area's Spare the Air Youth Conference
+                            and is also a delegate to California's Youth and Government Program. Sophia's passion on the council consists of using the media to alert politicians and
+                            other individuals of environmental concerns on a statewide, national, and international basis. Using her blog under the blogs tab above, she reaches out
+                            to her audience to accomplish this. In her free time, Sophia enjoys spending time with her brother and sister and swimming competitively.You can check out
+                            Sophia's blog at the address below and her GYC blog under the blogs tab above.
                             <br /><br />
                         </div>
                     </td>
