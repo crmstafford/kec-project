@@ -132,7 +132,7 @@
                 <div align="left">
                     <a href="http://www.ejungle.us" target="_blank" id="ejungle_link"><span id="ejungle_e">e</span><span id="ejungle_j">J</span><span id="ejungle_ungle">ungle</span></a>
                     <br />
-                    <span style="color:#999999;margin-left:42px;font-size:12px;">Last update: 11/4/2013</span>
+                    <span style="color:#999999;margin-left:42px;font-size:12px;">Last update: 11/15/2013</span>
                 </div>
             </div>
             <div id="howhelp" align="right">
