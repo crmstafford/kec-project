@@ -160,8 +160,8 @@
             <a href="javascript:doNothing();" id="clickMoreCollaborators">&nbsp;&nbsp;&nbsp;<i>...Click for more information on our collaborators...</i></a>
             <br /><br />
             <div id="Collaborators">
-            For example, the Center for Marine
-            Biodiversity and Conservation (CMBC) is a center of interdisciplinary cooperation in research, collaborating with partners and scientists from
+            For example, the Center for Marine Biodiversity and Conservation (CMBC) at Scripps Institution of Oceanography is a center of interdisciplinary
+            cooperation in research, collaborating with partners and scientists from
             other academic institutions, government agencies, industry leaders, and conservation organizations around the world, to seek technically
             sophisticated, regionally appropriate strategies to prevent and reverse biodiversity collapse. Bastyr University is an accredited, globally
             respected institution of natural health arts and sciences, improving the planet through innovative education, research and clinical service.

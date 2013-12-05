@@ -50,6 +50,7 @@
                     <td>
                         <div style="text-align:justify;">
                             <br />
+                            <asp:Image id="Image3" runat="server" imageurl="/images/board/cdarby.jpg" height="147px" width="127" imagealign="Left" bordercolor="White" borderwidth="5px" alt="Christian Darby" />
                             <b>Christian Darby - Treasurer</b><br />
                             Christian Darby is a President and CEO of Marketplace Products, a San Diego
                             infomercial supplier and consulting firm where he specializes in product

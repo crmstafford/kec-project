@@ -65,7 +65,7 @@
             <tr><td>
             <asp:Image id="Image2a" runat="server" imageurl="/images/gyc/gavin.jpg" height="147px" width="120" imagealign="Left" bordercolor="White" borderwidth="5px" alt="Gavin G. - Co-Founder" />
             <b>Gavin - Assistant Youth Director</b><br />
-            Gavin is six years old and is the inspiration for developing EcoClubs in lower schools.  His vision of a fun environmental club includes frequent fieldtrips to the
+            Gavin is eight years old and is the inspiration for developing EcoClubs in lower schools.  His vision of a fun environmental club includes frequent fieldtrips to the
             tide pools for exploration.  He has requested that KidsEcoClub support owl nesting boxes, gardens and nearby nature walks at school.  He loves to hike and look for
             animal tracks and wild animals.   He has a very good eye and usually spots animals before the rest of his family.  He has seen numerous deer, elk, bison, cranes,
             osprey, owls, foxes, coyotes, beavers, muskrats and one porcupine.  His vision is of a wide open world with lots of open space to explore.
@@ -82,6 +82,7 @@
                     <td>
                         <div style="text-align:justify;">
                             <br />
+                            <asp:Image id="Image3" runat="server" imageurl="/images/board/cdarby.jpg" height="147px" width="127" imagealign="Left" bordercolor="White" borderwidth="5px" alt="Christian Darby" />
                             <b>Christian Darby - Treasurer</b><br />
                             Christian Darby is a President and CEO of Marketplace Products, a San Diego
                             infomercial supplier and consulting firm where he specializes in product
