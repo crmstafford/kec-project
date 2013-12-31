@@ -393,12 +393,14 @@
                             <br />
                             <asp:Image id="Image18" runat="server" imageurl="/images/gyc/sophia.jpg" height="147px" width="127" imagealign="Left" bordercolor="White" borderwidth="5px" alt="Sophia H." />
                             <b>Sophia H.</b><br />
-                            Sophia is a sophomore at Amador Valley High School in the bay area. She is the youth adviser to her city's energy and environment committee as well as an
-                            avid blogger about environmental awareness and other important global issues. Sophia has spoken on advocacy at the Bay Area's Spare the Air Youth Conference
-                            and is also a delegate to California's Youth and Government Program. Sophia's passion on the council consists of using the media to alert politicians and
-                            other individuals of environmental concerns on a statewide, national, and international basis. Using her blog under the blogs tab above, she reaches out
-                            to her audience to accomplish this. In her free time, Sophia enjoys spending time with her brother and sister and swimming competitively.You can check out
-                            Sophia's blog at the address below and her GYC blog under the blogs tab above.
+                            Sophia is a high school student, an advocate, blogger, youth delegate and athlete.  She became interested in protecting the environment in
+                            the 4th grade, when she studied climate change. She started an environmental website at the age of ten and continues to run it.  She has
+                            spoken on her school district's TV channel on environmental issues, organized trash clean-ups,  recycling programs, and actively
+                            participated in her school's environmental club.  As a 9th grader, she helped to support and coordinate her former elementary school
+                            environmental club. Recently, she spoke on the importance of advocacy at the San Francisco Bay Area's YES Conference (Youth for
+                            Environmental Sustainability). She is the resident blogger for KEC and is working to engage  youth on a statewide and national scale to
+                            prevent arctic drilling.<br /><br />
+                            In her free time, Sophia spends time with her family, swims competitively and is a delegate to Youth and Government of California. 
                             <br /><br />
                         </div>
                     </td>
