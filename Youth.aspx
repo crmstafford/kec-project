@@ -58,10 +58,10 @@
         <table cellspacing="9px">
         <tr>
         <td>
-        <img src="/images/the-cove.jpg" alt="The Cove" />
+        <a href="http://www.thecovemovie.com/" target="_blank"><img src="/images/the-cove.jpg" alt="The Cove" /></a>
         </td>
         <td>
-        <img src="/images/blackfish.jpg" alt="Blackfish" />
+        <a href="http://blackfishmovie.com/" target="_blank"><img src="/images/blackfish.jpg" alt="Blackfish" /></a>
         </td>
         </tr></table>
         <span class="greycontent">
