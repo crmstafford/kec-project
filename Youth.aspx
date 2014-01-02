@@ -53,6 +53,22 @@
         </span>
         <br /><br /><br />
 
+        <strong class="h1green">Watch These Films!</strong>
+        <br/>
+        <table cellspacing="9px">
+        <tr>
+        <td>
+        <img src="/images/the-cove.jpg" alt="The Cove" />
+        </td>
+        <td>
+        <img src="/images/blackfish.jpg" alt="Blackfish" />
+        </td>
+        </tr></table>
+        <span class="greycontent">
+        <b>Demand a Plan - stop the practice of keeping whales and dolphins in captivity.</b>
+        </span>
+        <br /><br /><br />
+
         <strong class="h1green">Apply for the KEC's National Green Youth Council</strong>
         <br/><br />
         <span class="greycontent">

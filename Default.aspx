@@ -127,12 +127,12 @@
                     <img src="/images/Teens_color-small.png" alt="" />
                 </div>
                 <div id="cpyright">
-                    © 2013 KidsEcoClub
+                    © 2014 KidsEcoClub
                 </div>
                 <div align="left">
                     <a href="http://www.ejungle.us" target="_blank" id="ejungle_link"><span id="ejungle_e">e</span><span id="ejungle_j">J</span><span id="ejungle_ungle">ungle</span></a>
                     <br />
-                    <span style="color:#999999;margin-left:42px;font-size:12px;">Last update: 12/31/2013</span>
+                    <span style="color:#999999;margin-left:42px;font-size:12px;">Last update: 1/2/2014</span>
                 </div>
             </div>
             <div id="howhelp" align="right">
