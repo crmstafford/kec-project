@@ -71,11 +71,12 @@
             <div id="flash">
                 <div id="slide-holder" align="center">
                     <div id="slide-runner" align="center">
-                        <a href=""><img id="slide-img-1" src="/images/flash5resize90.jpg" class="slide" alt="" /></a>
-                        <a href=""><img id="slide-img-2" src="/images/teen-banner1.jpg" class="slide" alt="" /></a>
-                        <a href=""><img id="slide-img-3" src="/images/teen-banner2.jpg" class="slide" alt="" /></a>
-                        <a href=""><img id="slide-img-4" src="/images/flash4resize90.jpg" class="slide" alt="" /></a>
-                        <a href=""><img id="slide-img-5" src="/images/teen-banner4.jpg" class="slide" alt="" /></a>
+                        <a href="http://bit.ly/1afrLgv" target="_blank"><img id="slide-img-1" src="/images/events/healthy-planet.jpg" class="slide" alt="Healthy Planet Hero Awards" /></a>
+                        <a href=""><img id="slide-img-2" src="/images/flash5resize90.jpg" class="slide" alt="" /></a>
+                        <a href=""><img id="slide-img-3" src="/images/teen-banner1.jpg" class="slide" alt="" /></a>
+                        <a href=""><img id="slide-img-4" src="/images/teen-banner2.jpg" class="slide" alt="" /></a>
+                        <a href=""><img id="slide-img-5" src="/images/flash4resize90.jpg" class="slide" alt="" /></a>
+<!--                    <a href=""><img id="Img1" src="/images/teen-banner4.jpg" class="slide" alt="" /></a> -->
                         <div id="slide-controls">
                             <p id="slide-client" class="text"><strong>Welcome to </strong><span></span></p>
                             <p id="slide-desc" class="text"></p>
@@ -96,8 +97,9 @@
                 <div id="sidea-bottom" style="background:white">
                     <a href="About.aspx"><img src="/images/teen-home2.jpg" alt="" title="About Us" /></a>&nbsp;
                     <a href="Educators.aspx"><img src="/images/teen-home3.jpg" alt="" title="For Educators" /></a>&nbsp;
-                    <a href="Youth.aspx"><img src="/images/mainpg3.jpg" alt="" title="For Youth" /></a>&nbsp;
-                    <a href="Ecoclubs.aspx"><img src="/images/teen-home5.jpg" alt="" title="All about EcoClubs" /></a>
+                    <a href="Youth.aspx"><img src="/images/teen-home5.jpg" alt="" title="For Youth" /></a>&nbsp;
+                    <a href="http://bit.ly/1afrLgv" target="_blank"><img src="/images/events/hero-awards.jpg" alt="" title="Healthy Planet Hero Awards"/></a>&nbsp;
+<!--                <a href="Ecoclubs.aspx"><img src="images/teen-home5.jpg" alt="" title="All about EcoClubs" /></a> -->
                 </div>
                 <div class="grey" id="sideb" style="background:white">
                     <div align="center">
@@ -132,7 +134,7 @@
                 <div align="left">
                     <a href="http://www.ejungle.us" target="_blank" id="ejungle_link"><span id="ejungle_e">e</span><span id="ejungle_j">J</span><span id="ejungle_ungle">ungle</span></a>
                     <br />
-                    <span style="color:#999999;margin-left:42px;font-size:12px;">Last update: 1/2/2014</span>
+                    <span style="color:#999999;margin-left:42px;font-size:12px;">Last update: 1/20/2014</span>
                 </div>
             </div>
             <div id="howhelp" align="right">

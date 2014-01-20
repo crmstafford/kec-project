@@ -42,6 +42,16 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
 
+        <img src="/images/events/hero-awards-news.jpg" style="padding-left:20px;" alt="Healthy Planet Hero Awards" />
+        <br /><br />
+        <div class="greycontent" style="text-align:justify;">
+        KEC Founder Max Guinn and KEC National Green Youth Council member Sophia Holbrook to be honored by the State of California at the Healthy
+        Planet Local Hero Awards Gala on February 1, 2014.
+        <br /><br />
+        <a href="http://bit.ly/1afrLgv" target="_blank">Like KidsEcoClub on Facebook</a> for a chance to win 2 tickets to The Healthy Planet Local Hero Awards.  Enjoy a Five Course Wine Pairing Dinner
+        with awardees and distinguisehd guests.
+        </div>
+        <br /><br />
 <%--
         <span class="h1green">
             <strong>
