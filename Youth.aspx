@@ -74,7 +74,7 @@
         </td>
         </tr></table>
         <a href="" target="_blank"><img src="/images/demand-a-plan.jpg" alt="Demand A Plan" /></a>
-        <div class="fb-like" data-href="https://www.facebook.com/kidsecoclub" data-width="128" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+        <div class="fb-like" data-href="https://www.facebook.com/kidsecoclub" data-width="500" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
 <!--
         <span class="greycontent">
         <b>Demand a Plan - stop the practice of keeping whales and dolphins in captivity.</b>
