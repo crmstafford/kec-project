@@ -48,7 +48,8 @@
         Congratulation KEC Founder Max Guinn; KEC Green Youth Council Member Sophia H; Educator Lynn Howard; Interim Mayor Todd Gloria; County Supervisor Dave Roberts;
         SDUSD Board President Kevin Beiser; Whole Foods; Del Mar Fairgrounds; Bastyr University and La Vita Compounding Pharmacy!
         <br /><br />
-        <a href="http://events.r20.constantcontact.com/register/event?llr=799vjfnab&oeidk=a07e8mxhsly40aaf281&oseq=a015rhjioll52" target="_blank"><i>Click here for more information or to register...</i></a>
+        <a href="http://events.r20.constantcontact.com/register/event?llr=799vjfnab&oeidk=a07e8mxhsly40aaf281&oseq=a015rhjioll52" target="_blank"><i>Click here for more information or to register...</i></a><br />
+        <a href="http://bit.ly/1fUlkll" target="_blank"><i>Click here for the press release...</i></a>
         </div>
         <br /><br />
 <%--
