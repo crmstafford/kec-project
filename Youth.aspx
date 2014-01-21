@@ -45,6 +45,15 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
 
+<div id="fb-root"></div>
+<script>    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));</script>
+
         <strong class="h1green">Start or Join a KEC Club!</strong>
         <br/><br />
         <span class="greycontent">
@@ -65,6 +74,7 @@
         </td>
         </tr></table>
         <a href="" target="_blank"><img src="/images/demand-a-plan.jpg" alt="Demand A Plan" /></a>
+        <div class="fb-like" data-href="https://www.facebook.com/kidsecoclub" data-width="128" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
 <!--
         <span class="greycontent">
         <b>Demand a Plan - stop the practice of keeping whales and dolphins in captivity.</b>
