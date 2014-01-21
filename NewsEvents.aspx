@@ -42,14 +42,13 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
 
-        <img src="/images/events/hero-awards-news.jpg" style="padding-left:20px;" alt="Healthy Planet Hero Awards" />
+        <img src="/images/events/gala-news.jpg" alt="Healthy Planet Hero Awards" />
         <br /><br />
         <div class="greycontent" style="text-align:justify;">
-        KEC Founder Max Guinn and KEC National Green Youth Council member Sophia Holbrook to be honored by the State of California at the Healthy
-        Planet Local Hero Awards Gala on February 1, 2014.
+        Congratulation KEC Founder Max Guinn; KEC Green Youth Council Member Sophia H; Educator Lynn Howard; Interim Mayor Todd Gloria; County Supervisor Dave Roberts;
+        SDUSD Board President Kevin Beiser; Whole Foods; Del Mar Fairgrounds; Bastyr University and La Vita Compounding Pharmacy!
         <br /><br />
-        <a href="http://bit.ly/1afrLgv" target="_blank">Like KidsEcoClub on Facebook</a> for a chance to win 2 tickets to The Healthy Planet Local Hero Awards.  Enjoy a Five Course Wine Pairing Dinner
-        with awardees and distinguisehd guests.
+        <a href="http://events.r20.constantcontact.com/register/event?llr=799vjfnab&oeidk=a07e8mxhsly40aaf281&oseq=a015rhjioll52" target="_blank"><i>Click here for more information or to register...</i></a>
         </div>
         <br /><br />
 <%--
@@ -252,6 +251,10 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="SideContent" Runat="Server">
+
+    <a href="http://bit.ly/1afrLgv" target="_blank"><img src="/images/YellowTrophy.jpg" width="188px" style="margin:4px;" alt="Healthy Planet Hero Awards" /></a>
+    <br /><br />
+
     <div class="greycontent">
         <span class="style12i">
             <b><i>The person who removes a mountain begins by carrying away small stones.</i></b><br />

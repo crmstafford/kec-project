@@ -64,9 +64,11 @@
         <a href="http://blackfishmovie.com/" target="_blank"><img src="/images/blackfish.jpg" alt="Blackfish" /></a>
         </td>
         </tr></table>
+        <a href="" target="_blank"><img src="/images/demand-a-plan.jpg" alt="Demand A Plan" /></a>
+<!--
         <span class="greycontent">
         <b>Demand a Plan - stop the practice of keeping whales and dolphins in captivity.</b>
-        </span>
+        </span> -->
         <br /><br /><br />
 
         <strong class="h1green">Apply for the KEC's National Green Youth Council</strong>

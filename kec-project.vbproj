@@ -100,6 +100,7 @@
     <Content Include="ContactUs.aspx" />
     <Content Include="Contrib-Bags.aspx" />
     <Content Include="Contrib-Honey.aspx" />
+    <Content Include="Default-old.aspx" />
     <Content Include="VolunteerAppln.aspx" />
     <Content Include="Corporate.aspx" />
     <Content Include="CorporateNews.aspx" />
