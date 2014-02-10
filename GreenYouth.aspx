@@ -285,7 +285,7 @@
                             of nesting owls kills 2,000 rodents per year! In addition, Max is a club basketball player, fair golfer, snowboarder, surfer, birder and avid fisherman.
                             He enjoys all things outdoors. 
                             <br /><br />
-                            <a href="" target="http://petition.demandaplannow.org" alt="DemandAPlanNow">
+                            <a href="http://petition.demandaplannow.org" target="_blank" alt="DemandAPlanNow">
                             <asp:Image id="Image10a" runat="server" imageurl="/images/demand-a-plan.jpg" width="300px" imagealign="Left" bordercolor="White" borderwidth="5px" alt="DemandAPlanNow" />
                             <b>Demand A Plan Now for Whales and Dolphins in Captivity</b><br /><br />
                             - Please click here to sign my petition to Sea World.</a>
