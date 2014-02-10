@@ -51,6 +51,7 @@
                         <a href="Clubs.aspx"><img src="/images/menuclubs.png" alt="" /></a>
                         &nbsp;&nbsp;&nbsp;
                         <a href="NewsEvents.aspx"><img src="/images/menunewsevents.png" alt="" /></a>
+                        &nbsp;&nbsp;
                     </div>
                 </div>
                 <div id="subtop2">
@@ -92,7 +93,7 @@
                         <asp:ContentPlaceHolder ID="LogoHolder" runat="server" />
 
                         <img src="/images/text-join.png" style="margin-left:-16px;margin-right:-14px;" alt="" />
-                        <br />
+                        <br /><br />
                     </div>
                     <div id="sidea-b" style="font-weight:normal">
                         <div align="left">
@@ -122,18 +123,22 @@
                         <div id="lowerlogo" align="left">
                             <img src="/images/Teens_color-small.png" alt="" />
                         </div>
-                <div id="cpyright">
-                    © 2014 KidsEcoClub
-                </div>
+                        <div id="cpyright">
+                            © 2014 KidsEcoClub
+                            </br>
+                            <span style="color:Black;font-size:11px;">
+                            Last updated: 2/10/2014
+                            </span>
+                        </div>
                         <div align="left">
-                            <a href="http://www.ejungle.us" target="_blank" id="A1"><span id="Span1">e</span><span id="Span2">J</span><span id="Span3">ungle</span></a>
+                            <a href="http://www.ejungle.us" target="_blank" id="ejungle_link"><span id="ejungle_e">e</span><span id="ejungle_j">J</span><span id="ejungle_ungle">ungle</span></a>
                         </div>
                     </div>
                     <br />
                     <div id="howhelp" align="right">
                         <a href="GetInvolved.aspx"><img src="/images/howhelp.png" alt="" /></a>
                     </div>
-                 </div>
-             </div>
+               </div>
+           </div>
     </body>
 </html>

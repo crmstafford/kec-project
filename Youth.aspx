@@ -62,6 +62,7 @@
         </span>
         <br /><br /><br />
 
+<!--
         <strong class="h1green">Watch These Films!</strong>
         <br/>
         <table cellspacing="9px">
@@ -73,14 +74,11 @@
         <a href="http://blackfishmovie.com/" target="_blank"><img src="/images/blackfish.jpg" alt="Blackfish" /></a>
         </td>
         </tr></table>
-        <a href="" target="_blank"><img src="/images/demand-a-plan.jpg" alt="Demand A Plan" /></a>
+        <a href="http://www.change.org/petitions/jim-atchison-stop-using-whales-and-dolphins-in-performances-stop-breeding-them-commit-to-a-plan-to-get-them-out-of-parks?share_id=YDvmlmtETt&utm_campaign=share_button_mobile&utm_medium=facebook&utm_source=share_petition" target="_blank"><img src="/images/demand-a-plan.jpg" alt="Demand A Plan" /></a>
+        <a href="http://www.change.org/petitions/jim-atchison-stop-using-whales-and-dolphins-in-performances-stop-breeding-them-commit-to-a-plan-to-get-them-out-of-parks?share_id=YDvmlmtETt&utm_campaign=share_button_mobile&utm_medium=facebook&utm_source=share_petition" target="_blank"><i>Click here to sign our petition...</i></a><br /><br />
         <div class="fb-like" data-href="https://www.facebook.com/kidsecoclub" data-width="500" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
-<!--
-        <span class="greycontent">
-        <b>Demand a Plan - stop the practice of keeping whales and dolphins in captivity.</b>
-        </span> -->
         <br /><br /><br />
-
+-->
         <strong class="h1green">Apply for the KEC's National Green Youth Council</strong>
         <br/><br />
         <span class="greycontent">
@@ -136,7 +134,10 @@
         </span>
         <br/><br />
         <span class="greycontent">
-        <a href="http://www.takepart.com/thecove/" target="_blank">The Cove</a>
+        <a href="http://blackfishmovie.com/" target="_blank">Blackfish</a>
+        – never catch what you can't control!
+        <br /><br />
+        <a href="http://www.thecovemovie.com/" target="_blank">The Cove</a>
         – a powerful film about the slaughter of more than 20,000 dolphins and
         porpoises off the coast of Japan every year, and how their meat, containing toxic
         levels of mercury, is sold as food in Japan and other parts of Asia, often labeled

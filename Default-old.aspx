@@ -71,12 +71,11 @@
             <div id="flash">
                 <div id="slide-holder" align="center">
                     <div id="slide-runner" align="center">
-                        <a href="http://bit.ly/1afrLgv" target="_blank"><img id="slide-img-1" src="/images/events/healthy-planet.jpg" class="slide" alt="Healthy Planet Hero Awards" /></a>
                         <a href=""><img id="slide-img-2" src="/images/flash5resize90.jpg" class="slide" alt="" /></a>
                         <a href=""><img id="slide-img-3" src="/images/teen-banner1.jpg" class="slide" alt="" /></a>
                         <a href=""><img id="slide-img-4" src="/images/teen-banner2.jpg" class="slide" alt="" /></a>
                         <a href=""><img id="slide-img-5" src="/images/flash4resize90.jpg" class="slide" alt="" /></a>
-<!--                    <a href=""><img id="Img1" src="/images/teen-banner4.jpg" class="slide" alt="" /></a> -->
+                        <a href=""><img id="Img1" src="/images/teen-banner4.jpg" class="slide" alt="" /></a>
                         <div id="slide-controls">
                             <p id="slide-client" class="text"><strong>Welcome to </strong><span></span></p>
                             <p id="slide-desc" class="text"></p>

@@ -265,9 +265,6 @@
             <a href="http://astore.amazon.com/kid0702-20" target="_blank"><i><b>Click here to visit our KidsEcoClub Store</b></i></a>
             <i><b><br />All purchases will directly help KidsEcoClub</b></i>
         </span>
-        <br /><br />
-<a id="rc-e638251" class="rafl" href="http://www.rafflecopter.com/rafl/display/e638251/" style="width:150px;height:300px;" rel="nofollow">a Rafflecopter giveaway</a>
-<script src="//d12vno17mo87cx.cloudfront.net/embed/rafl/cptr.js"></script>
         <br /><br /><br />
 
 </asp:Content>

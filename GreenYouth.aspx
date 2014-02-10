@@ -269,7 +269,7 @@
                     <td>
                         <div style="text-align:justify;">
                             <br />
-                            <asp:Image id="Image10" runat="server" imageurl="../images/gyc/maxg.jpg" height="147px" width="120" imagealign="Left" bordercolor="White" borderwidth="5px" alt="Max G." />
+                            <asp:Image id="Image10" runat="server" imageurl="/images/gyc/maxg.jpg" height="147px" width="120" imagealign="Left" bordercolor="White" borderwidth="5px" alt="Max G." />
                             <b>Max G.</b><br />
                             Max started KidsEcoClub at the age of ten.  He is now thirteen.  He is the recipient of the 2013 Youth Change-Maker award from the San Diego Unified
                             School District Board of Education and a 2012 Earth Award from Earth Works for his work to support healthy students, healthy communities and a healthy
@@ -285,13 +285,18 @@
                             of nesting owls kills 2,000 rodents per year! In addition, Max is a club basketball player, fair golfer, snowboarder, surfer, birder and avid fisherman.
                             He enjoys all things outdoors. 
                             <br /><br />
+                            <a href="" target="http://petition.demandaplannow.org" alt="DemandAPlanNow">
+                            <asp:Image id="Image10a" runat="server" imageurl="/images/demand-a-plan.jpg" width="300px" imagealign="Left" bordercolor="White" borderwidth="5px" alt="DemandAPlanNow" />
+                            <b>Demand A Plan Now for Whales and Dolphins in Captivity</b><br /><br />
+                            - Please click here to sign my petition to Sea World.</a>
+                            <br /><br />
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div style="text-align:justify;">
-                            <br />
+                            <br /><br />
                             <asp:Image id="Image11" runat="server" imageurl="/images/gyc/milena.jpg" height="147px" width="120" imagealign="Left" bordercolor="White" borderwidth="5px" alt="Milena C." />
                             <b>Milena C-W.</b><br />
                             Milena is a high schooler in Southern California.  Her vision of a sustainable earth is one in which there is public transportation
