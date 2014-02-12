@@ -181,8 +181,7 @@
                             featured in the April 2012 edition of Earth Times.  Evan publically spoke  before the Solana Beach City Council members and
                             encouraged them to vote yes and reduce single use plastic bags in their community. Moments after this the council voted
                             unanimously in favor making Solana Beach the first community in San Diego County to pass such legislation. He started a
-                            petition to ban the sale and distribution of single use plastic bags within the City Of San Diego as well.  Sign Evan's
-                            <a href="http://www.change.org/petitions/mayor-of-san-diego-and-the-san-diego-city-council-please-ban-single-use-plastic-bags-in-san-diego" target="_blank">Change.org petition here</a>.
+                            petition to ban the sale and distribution of single use plastic bags within the City Of San Diego as well. 
                             Evan is a member of the Solana Beach Clean and Green Committee, which is instrumental in performing energy
                             audits, outreach, sustainability evaluations and recycling for the community.  In addition, Evan has
                             spoken out on the need to save the honey bees as well as written an informative article on bees. Evan has
@@ -191,6 +190,12 @@
                             basketball, skiing and surfing. He thinks the environment is very important
                             because without nature we cannot survive. He believes we all need to work together to protect nature and
                             all the animals in it because they all contribute their part to the ecosystem. 
+                            <br /><br />
+                            <a href="http://www.change.org/petitions/mayor-of-san-diego-and-the-san-diego-city-council-please-ban-single-use-plastic-bags-in-san-diego" target="_blank" alt="DemandAPlanNow">
+                            <asp:Image id="Image4a" runat="server" imageurl="/images/turtle-bag.jpg" width="300px" imagealign="Left" bordercolor="White" borderwidth="5px" alt="Ban Plastic Bags in San Diego" />
+                            <br /><br />
+                            <b>Please ban single use plastic bags in San Diego</b><br /><br />
+                            - Please click here to sign my petition to the Mayor of San Diego and the San Diego City Council.</a>
                             <br /><br />
                         </div>
                     </td>
@@ -210,7 +215,7 @@
                 <tr>
                      <td>
                         <div style="text-align:justify;">
-                            <br />
+                            <br /><br />
                             <asp:Image id="Image6" runat="server" imageurl="/images/gyc/gage.jpg" height="147px" width="127" imagealign="Left" bordercolor="White" borderwidth="5px" alt="Gage S." />
                             <b>Gage S.</b><br />
                             Gage is 12 years old and a sixth grader in southern California. He is co-president of his school’s Student Council.  His favorite subjects are math,

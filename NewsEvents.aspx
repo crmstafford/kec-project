@@ -42,6 +42,34 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
 
+        <span class="h1green">
+            <strong>
+            The Healthy Planet Local Hero Awards Gala
+            </strong>
+        </span>
+        <br /><br />
+        <div class="greycontent" style="text-align:justify;">
+        Hi Everyone!<br /><br />
+        Thank you for your generosity and time. The Healthy Planet Local Hero Awards Gala was a great event. It was an honor to celebrate San Diego's
+        environmental champions. I am grateful to have been included among them. Please visit <a href="http://www.facebook.com/kidsecoclub" target="_blank" alt="">KidsEcoClub on FaceBook</a> to see all the pictures.
+        The videos of Betty Yee's welcoming remarks, Dr. Jeremy Jackson's passionate and brillant speech and Sophia Holbrook's call to action are attached.
+        All are worth watching again.<br /><br />
+        <table>
+        <tr>
+        <td><iframe width="180" src="http://www.youtube.com/embed/g-K5YWN5hyo?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></td>
+        <td><iframe width="180" src="http://www.youtube.com/embed/NyWHSflfiag?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></td>
+        <td><iframe width="180" src="http://www.youtube.com/embed/EnaIHl2CnA0?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></td>
+        </tr></table>
+        Thank you Tammy Rooke and Diane Hyat for chairing the event. Betty Yee you were awesome! Dr. Jeremy Jackson, Dr. Nancy Knowlton and Dr. Ralph Keeling,
+        we all learned so much from you. Dr. Nigella Hillgarth, Steven Schindler and Michael Chen, you made it all work.<br /><br />
+        On behalf of KidsEcoClub, thank you! 
+        <br /><br />
+        Sincerely,<br />
+        Max Guinn<br />
+        Founder, KidsEcoClub
+        </div>
+        <br /><br />
+
         <img src="/images/events/gala-news.jpg" alt="Healthy Planet Hero Awards" />
         <br /><br />
         <div class="greycontent" style="text-align:justify;">
