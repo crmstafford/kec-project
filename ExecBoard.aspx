@@ -33,16 +33,20 @@
              <tr><td>
             <asp:Image id="Image1" runat="server" imageurl="/images/board/susanguinn.jpg" height="147px" width="127" imagealign="Left" bordercolor="White" borderwidth="5px" alt="Susan Guinn - Director and Co-founder" />
             <b>Susan Guinn - President and Co-founder</b><br />
-            Susan Guinn received her Baccalaureate Degree in Nursing from the University of New Mexico in 1988 and graduated from the University Of Denver School Of Law
-            with her J.D in 1991. She has a San Diego based national law practice emphasizing consumer protection, including product liability, business litigation,
-            birth injury medical malpractice, severe personal injury, environmental law and insurance bad faith.  She was a two time President for the Western Trial Lawyers
-            and is or has been in the past a member of the Consumer Attorneys of California (“CAOC”), the San Diego Trial Lawyers Association, the Western Trial Lawyers
-            Association, the Association of Trial Lawyers of America, the Attorneys Information Exchange Group, and Trial Lawyers for Public Justice.  In addition, she has
-            served as a Board Member for CAOC from approximately 1996 through 2000.<br /><br />
-            In addition to founding KidsEcoClub in 2010, Ms Guinn is also a founding board member and Secretary for the non-profit organization the St. Paul’s Foundation for
-            International Reconciliation, which provides legal and financial support to the St Paul's Center in Kampala Uganda.  The Center is led by Bishop Christopher Senyonyo
-            who was recognized as one of the top ten religious leaders in the world by the Huffington Post.  It provides women’s self-help and advocacy programs, HIV education
-            and prevention, literacy training, and micro loan programs to underserved populations in Uganda and elsewhere.
+            Susan Guinn received her Baccalaureate Degree in Nursing from the University of New Mexico in 1988 and graduated from the University of Denver School of Law
+            with her J.D in 1991. She has a San Diego based law practice dedicated to protecting and advancing consumer rights. Examples of Guinn's cases include school
+            bus safety, tobacco litigation, tax and fee assessment fraud and insurance bad faith. She was a two time President for the Western Trial Lawyers and is or
+            has been in the past a member of the Consumer Attorneys of California (“CAOC”), the San Diego Trial Lawyers Association, the Western Trial Lawyers
+            Association, the Association of Trial Lawyers of America, the Attorneys Information Exchange Group, and Trial Lawyers for Public Justice. In addition,
+            she served as a Board Member for CAOC from approximately 1996 through 2000.
+            <br /><br />
+            In addition to founding KidsEcoClub with her son in 2010, Ms Guinn is also a founding board member and Secretary for the non-profit organization the St.
+            Paul’s Foundation for International Reconciliation, which provides legal and financial support to the St Paul's Center in Kampala Uganda. The Center is
+            led by Bishop Christopher Senyonyo who was recognized as one of the top ten religious leaders in the world by the Huffington Post. It provides women’s
+            self-help and advocacy programs, HIV education and prevention, literacy training, and micro loan programs to underserved populations in Uganda and
+            elsewhere. 
+            <br /><br />
+            Guinn is also the Chair of the Environmental and Sustainability Committee for the San Diego Unified School District.
             <br /><br />
             </td>
             </tr>

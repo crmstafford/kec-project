@@ -276,19 +276,20 @@
                             <br />
                             <asp:Image id="Image10" runat="server" imageurl="/images/gyc/maxg.jpg" height="147px" width="120" imagealign="Left" bordercolor="White" borderwidth="5px" alt="Max G." />
                             <b>Max G.</b><br />
-                            Max started KidsEcoClub at the age of ten.  He is now thirteen.  He is the recipient of the 2013 Youth Change-Maker award from the San Diego Unified
-                            School District Board of Education and a 2012 Earth Award from Earth Works for his work to support healthy students, healthy communities and a healthy
-                            planet.  Max is also an Ambassador to the San Diego Foundation’s 50-year strategic plan for the region and was recognized as an “Outstanding Ambassador
-                            for Civic Youth Engagement." He is an activist, starting a Change.org petition to President Obama to ban the sale and distribution of shark fin products
-                            in the United States. The petition garnered support from the Birch Aquarium, Wild Aid, Deep Sea News and the Center for Marine Biodiversity and
-                            Conservation at the Scripps Institution of Oceanography. His vision of a sustainable world is one in which our planet is clean and safe, with enough
-                            food, water and space for everyone, including animals and fish. His hobbies include collecting animal skulls from his many hikes in the Rocky Mountains.
-                            This interest was sparked by the discovery of a beaver skull on the roof of his home in Colorado. The beaver was carried there and eaten by a Great
-                            Horned Owl. Max especially loves owls and started a successful collaboration with the wood shop at Clairemont High in San Diego to build barn owl
-                            nesting boxes, which are given to public schools to raise awareness about owls. Max frequently speaks to students about the dangers of using poisons
-                            to control the rodent population due to the secondary kill rates among owls, hawks, foxes, coyotes and other animals. He wants you to know that a pair
-                            of nesting owls kills 2,000 rodents per year! In addition, Max is a club basketball player, fair golfer, snowboarder, surfer, birder and avid fisherman.
-                            He enjoys all things outdoors. 
+                            Max started KidsEcoClub at the age of ten. He is now thirteen. Max received an award from the State of California, Board of Equalization, for Youth Civic
+            Engagement on February 1, 2014. He is the recipient of the 2013 Youth Change-Maker award from the San Diego Unified School District Board of Education and
+            a 2012 Earth Award from Earth Works for his work to support healthy students, healthy communities and a healthy planet. Max is also an Ambassador to the
+            San Diego Foundation’s 50-year strategic plan for the region and was recognized as an “Outstanding Ambassador for Civic Youth Engagement." He is an
+            activist, starting a Change.org petition to President Obama to ban the sale and distribution of shark fin products in the United States. The petition
+            garnered support from the Birch Aquarium, Wild Aid, Deep Sea News and the Center for Marine Biodiversity and Conservation at the Scripps Institution
+            of Oceanography. He posted an official comment opposing the Georgia Aquarium's request to bring 18 wild caught beluga whales to the United States for
+            display  and distribution. His vision of a sustainable world is one in which our planet is clean and safe, with enough food, water and space for everyone,
+            including animals and fish. His hobbies include collecting animal skulls from his many hikes in the Rocky Mountains. This interest was sparked by the
+            discovery of a beaver skull on the roof of his home in Colorado. The beaver was carried there and eaten by a Great Horned Owl. Max especially loves owls
+            and started a successful collaboration with the wood shop at Clairemont High in San Diego to build barn owl nesting boxes, which are given to public
+            schools to raise awareness about owls. Max frequently speaks to students about the dangers of using poisons to control the rodent population due to
+            the secondary kill rates among owls, hawks, foxes, coyotes and other animals. He wants you to know that a pair of nesting owls kills 2,000 rodents per
+            year! In addition, Max is a club basketball player, fair golfer, snowboarder, surfer, birder and avid fisherman. He enjoys all things outdoors.  
                             <br /><br />
                             <a href="http://petition.demandaplannow.org" target="_blank" alt="DemandAPlanNow">
                             <asp:Image id="Image10a" runat="server" imageurl="/images/demand-a-plan.jpg" width="300px" imagealign="Left" bordercolor="White" borderwidth="5px" alt="DemandAPlanNow" />
