@@ -44,6 +44,21 @@
 
         <span class="h1green">
             <strong>
+            Fernando Aguerre Inspires 8th Graders at the San Diego Youth Leadership & Dialogue Summit Series 
+            </strong>
+        </span>
+        <br /><br />
+        <div class="greycontent" style="text-align:justify;">
+        International Surfing Association (ISA) President Fernando Aguerre was the keynote speaker for The San Diego Youth Leadership & Dialog Summit Series, a new pilot program that aims to foster
+        entrepreneurship amongst young students, regardless of background in San Diego County. The series was brought together by a variety of partners, including KidsEcoClub, Public Conversations West
+        with Meenakshi Chakraverti, the USD School of Leadership with Zachary Green, Steve Chapple’s Intellectual Capital, Price Charities and the Invention Foundation.
+        <br /><br />
+        <a href="http://www.surf-devil.com/en/forum.html?func=view&catid=24&start=00&id=11700" target="_blank"><i>Click here to read more...</i></a>
+        </div>
+        <br /><br /><br />
+
+        <span class="h1green">
+            <strong>
             The Healthy Planet Local Hero Awards Gala
             </strong>
         </span>

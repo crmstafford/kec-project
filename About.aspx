@@ -225,9 +225,6 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="SideContent" Runat="Server">
 
-    <a href="http://bit.ly/1afrLgv" target="_blank"><img src="/images/events/YellowTrophy.png" style="margin:11px;" alt="Healthy Planet Hero Awards" /></a>
-    <br /><br />
-
      <span class="style12i">
         <b><i>Something will have gone out of us as a people if we ever let the remaining wilderness be destroyed.</i></b><br />
         &nbsp;– Wallace Stegner
