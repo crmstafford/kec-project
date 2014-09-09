@@ -191,11 +191,14 @@
                             because without nature we cannot survive. He believes we all need to work together to protect nature and
                             all the animals in it because they all contribute their part to the ecosystem. 
                             <br /><br />
-                            <a href="http://www.change.org/petitions/mayor-of-san-diego-and-the-san-diego-city-council-please-ban-single-use-plastic-bags-in-san-diego" target="_blank" alt="DemandAPlanNow">
                             <asp:Image id="Image4a" runat="server" imageurl="/images/turtle-bag.jpg" width="300px" imagealign="Left" bordercolor="White" borderwidth="5px" alt="Ban Plastic Bags in San Diego" />
-                            <br /><br />
-                            <b>Please ban single use plastic bags in San Diego</b><br /><br />
+                            <a href="http://www.change.org/petitions/mayor-of-san-diego-and-the-san-diego-city-council-please-ban-single-use-plastic-bags-in-san-diego" target="_blank" alt="Ban Plastic Bags in San Diego">
+                            <b>Please ban single use plastic bags in San Diego</b><br />
                             - Please click here to sign my petition to the Mayor of San Diego and the San Diego City Council.</a>
+                            <br /><br />
+                            <a href="https://www.change.org/p/gov-jerry-brown-please-sign-sb-270-to-ban-single-use-plastic-bags-in-california?recruiter=17131936&utm_campaign=mailto_link&utm_medium=email&utm_source=share_petition%3D" target="_blank" alt="Ban Plastic Bags in San Diego">
+                            <b>Petition to ask Governor Brown to sign SB 270 to Ban Plastic Bags</b><br />
+                            - Please sign this petition to ask Governor Jerry Brown to sign SB 270, which the California State Senate recently passed, to ban Single Use Plastic Bags in California.</a>
                             <br /><br />
                         </div>
                     </td>
