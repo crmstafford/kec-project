@@ -39,7 +39,10 @@
             <a href="mailto:info@kidsecoclub.org">info@kidsecoclub.org</a>
             <br /><br />
             <b>Program coordinator</b><br />
-            <a href="mailto:zhayman@kidsecoclub.org">zhayman@kidsecoclub.org</a>
+            <a href="mailto:conniejoy@kidsecoclub.org">ConnieJoy@kidsecoclub.org</a>
+            <br /><br />
+            <b>Program Facilitator & Event Coordinator</b><br />
+            <a href="mailto:carolynkates@kidsecoclub.org">CarolynKates@kidsecoclub.org</a>
             <br /><br />
             <b>Kids Harvest program</b><br />
             <a href="mailto:sparikh@kidsecoclub.org">sparikh@kidsecoclub.org</a>
@@ -50,8 +53,8 @@
             <b>School gardens program</b><br />
             <a href="mailto:garden@kidsecoclub.org">garden@kidsecoclub.org</a>
             <br /><br />
-            <b>Social media</b><br />
-            <a href="mailto:sbaracchini@kidsecoclub.org">sbaracchini@kidsecoclub.org</a>
+            <b>Marketing, media and social media</b><br />
+            <a href="mailto:carolynkates@kidsecoclub.org">CarolynKates@kidsecoclub.org</a>
             <br /><br />
             <b>Volunteer</b><br />
             <a href="mailto:volunteer@kidsecoclub.org">volunteer@kidsecoclub.org</a>
