@@ -1,8 +1,10 @@
 ﻿<%@ Page Title="EcoClub - Club application" Language="VB" MasterPageFile="Site.master" AutoEventWireup="false"  %>
 
-<%@ Import Namespace="System.web"  %>
-<%@ Import Namespace="System.IO" %>
-<%@ Import Namespace="Persits.Email" %>
+<%@ Import Namespace="System"  %>
+<%@ Import Namespace="System.Collections.Generic" %>
+<%@ Import Namespace="System.Net.Mail" %>
+<%@ Import Namespace="System.Text" %>
+<%@ Import Namespace="System.Net.Mime" %>
 
 <script runat="server">
     Protected Sub Page_PreLoad(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.PreLoad
@@ -24,13 +26,13 @@
              ErrorMsg.Visible = True
          Else
              Try
-                 Dim objMail As MailSender = New MailSender()
-                 Dim timeNow As String = DateTime.Now.ToString()
-                 objMail.Host = "smtp.s4software.com"
-                 objMail.From = "clubadmin@kidsecoclub.org"
-                 objMail.Subject = "ClubAppln: " & txt_firstName.Text & " " & txt_lastName.Text & "," & txt_school.Text & "," & txt_city.Text & "," & txt_clubname.Text
-                 objMail.AddAddress("clubadmin@kidsecoclub.org")
-                 objMail.Body = "Club application at " & timeNow & ", " & Chr(10) & Chr(13) & _
+        Dim mailMsg as MailMessage = new MailMessage();
+
+        mailMsg.To.Add(new MailAddress("clubadmin@kidsecoclub.org", "To Name"));
+        mailMsg.From = new MailAddress("clubadmin@kidsecoclub.org", "From Name")
+         Dim timeNow As String = DateTime.Now.ToString()
+        mailMsg.Subject = "ClubAppln: " & txt_firstName.Text & " " & txt_lastName.Text & "," & txt_school.Text & "," & txt_city.Text & "," & txt_clubname.Text;
+        Dim text As String = "Club application at " & timeNow & ", " & Chr(10) & Chr(13) & _
                      txt_firstName.Text & " " & txt_lastName.Text & Chr(10) & Chr(13) & _
                      radio_iam.SelectedValue & Chr(10) & Chr(13) & _
                      "Position: " & txt_position.Text & Chr(10) & Chr(13) & _
@@ -44,26 +46,34 @@
                      "City: " & txt_city.Text & ", " & txt_state.Text & Chr(10) & Chr(13) & _
                      txt_email.Text & ", Texting: " & txt_gettexts.Checked & Chr(10) & Chr(13) & _
                      txt_primphone.Text
-                 objMail.Send()
-                 objMail = Nothing
+        mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain))
+
+
+        Dim smtpClient as SmtpClient = new SmtpClient("smtp.sendgrid.net", Convert.ToInt32(587))
+        Dim credentials as System.Net.NetworkCredential = new System.Net.NetworkCredential("azure_ff7e02475d9e3ffa79a300f81ec46d83@azure.com", "l0qKYXK2UC2IMQQ")
+        smtpClient.Credentials = credentials
+
+        smtpClient.Send(mailMsg)
+
                  Message.Text = "Your application has been submitted<br><br>"
              Catch ex As Exception
                  Message.Text = "Error " + ex.Message
              End Try
 <%--
-             Try
-                 Dim objMail As MailSender = New MailSender()
-                 Dim timeNow As String = DateTime.Now.ToString()
-                 objMail.Host = "smtp.s4software.com"
-                 objMail.From = "clubadmin@kidsecoclub.org"
-                 objMail.Subject = "Your KidsEcoClub application"
-                 objMail.AddAddress(txt_email.Text)
-                 objMail.Body = "Thank you for send an EcoClub application for " & txt_clubname.Text & ". We will review your application and get back to you."
-                 objMail.Send()
-                 objMail = Nothing
-             Catch ex As Exception
-                 Message.Text = "Error sending confirmation to: " & txt_email.Text & ": " & ex.Message
-             End Try
+        Dim Dest As New System.Net.Mail.MailAddress("myadres@mydomain.com")
+        Dim msg As New System.Net.Mail.MailMessage
+        Dim smtp As New System.Net.Mail.SmtpClient
+        smtp.Host = "smtp.mydomain.com"
+        With msg
+            .Body = txtBody.text
+            .From = New Net.Mail.MailAddress(txtMailAdress.Text)
+            .Priority = Net.Mail.MailPriority.High
+            .Subject = txtSubject.Text
+            .IsBodyHtml = True
+            .To.Clear()
+            .To.Add(Dest)
+        End With
+        smtp.Send(msg)
 --%>
          End If
      End Sub
