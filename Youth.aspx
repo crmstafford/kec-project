@@ -128,7 +128,19 @@
             <i><b>"Be bold in what you stand for.</b></i><br />
             &nbsp;- Ruth Boorstin
         </span>
+        </div>
         <br /><br /><br />
+
+        <a name="blogs" />
+        <span class="styleMedBlk">
+            <i>KEC ECOBLOGS:</i>
+        </span>
+        <br/><br />
+        <span class="greycontent">
+        <a href="http://blogs.kidsecoclub.org/sophia" target="_blank" style="font-size:16px" >Green Youth Voice</a>
+        </span>
+        <br /><br /><br />
+
         <span class="styleMedBlk">
             <i>FILMS TO SEE:</i>
         </span>

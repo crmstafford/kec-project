@@ -24,7 +24,9 @@
                 <div align="center" style="height:110px;width:990px;">
                     <div style="float:right;margin-top:70px;">
                         <a href="http://www.facebook.com/kidsecoclub" target="_blank"><img src="/images/social/facebook42.png" /></a>
+<!--
                         <a href="https://plus.google.com/108077412353767486720" target="_blank"><img src="/images/social/googleplus42.png" /></a>
+-->
                         <a href="https://twitter.com/KidsEcoClub" target="_blank"><img src="/images/social/twitter42.png" /></a>
                         <a href="http://vimeo.com/kidsecoclub" target="_blank"><img src="/images/social/vimeo42.png" /></a>
                         <a href="https://www.youtube.com/channel/UCmjhh7kQfSTe0BQtotR81zw?feature=watch" target="_blank"><img src="/images/social/youtube42.png" /></a>
@@ -56,12 +58,14 @@
                 </div>
                 <div id="subtop2">
 
-                    <a href="Blogs.aspx" class="subnavmenu">BLOGS</a>
+                    <a href="Youth.aspx#blogs" class="subnavmenu">BLOGS</a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
+<!--
                     <a href="Videos.aspx" class="subnavmenu">MUST SEE VIDEOS</a>
                     &nbsp;&nbsp;|&nbsp;&nbsp;
                     <a href="Gardens.aspx" class="subnavmenu">GARDENS</a>
                     &nbsp;&nbsp;|&nbsp;
+-->
                     <a href="GreenYouth.aspx" class="subnavmenu">GREEN YOUTH COUNCIL</a>
 <!--
                     <br />
@@ -124,12 +128,16 @@
                     <div id="howstart" align="right">
                         <a href="Ecoclubs.aspx"><img src="/images/howstartclub.png" alt="" /></a>
                     </div>
-                    <div id="lower-menu" align="center">
+                    <div id="lower-menu" align="left">
+                        <div style="margin-left:20px;">
+<!--
                         <a href="FAQ.aspx"><img src="/images/menufaq.png" alt="" /></a>
                         <a href="Resources.aspx"><img src="/images/menuresources.png" alt="" /></a>
                         <a href="Corporate.aspx"><img src="/images/menucorporate.png" alt="" /></a>
+-->
                         <a href="Privacy.aspx"><img src="/images/menuprivacy.png" alt="" /></a>
                         <a href="ContactUs.aspx"><img src="/images/menucontact.png" alt="" /></a>
+                        </div>
                         <br />
                         <div id="lowerlogo" align="left">
                             <img src="/images/Teens_color-small.png" alt="" />

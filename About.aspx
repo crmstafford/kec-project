@@ -209,7 +209,7 @@
             <tr>
                 <td><img src="/images/la-Vita_logo.jpg" alt="LaVita Compounding Pharmacy" width="100px" /></td>
                 <td><img src="/images/ndi-logo.jpg" alt="Natural Doctors International" width="100px" /></td>
-                <td></td>
+                <td><img src="/images/whole-foods.jpg" alt="Whole Foods" width="100px" /></td>
                 <td><img src="/images/partner-birch.jpg" alt="Birch Acquarium" width="100px" /></td>
                 <td><img src="/images/armgrow.jpg" alt="Armstrong Growers" width="100px" /></td>
             </tr>

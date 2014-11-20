@@ -428,6 +428,8 @@
                             prevent arctic drilling.<br /><br />
                             In her free time, Sophia spends time with her family, swims competitively and is a delegate to Youth and Government of California. 
                             <br /><br />
+                            <a href="http://blogs.kidsecoclub.org/sophia" target="_blank"><i>Read Sophia's Green Youth Voice blog...</i></a>
+                            <br /><br />
                         </div>
                     </td>
                 </tr>
