@@ -20,6 +20,7 @@
     </head>
 
     <body BGCOLOR="#f4f0e8">
+     <asp:ContentPlaceHolder ID="BodyTopHolder" runat="server"/>
             <div id="wrap" align="center">
                 <div align="center" style="height:110px;width:990px;">
                     <div style="float:right;margin-top:70px;">
@@ -127,7 +128,7 @@
                             © 2014 KidsEcoClub
                             <br />
                             <span style="color:Black;font-size:11px;">
-                            Last updated: 10/14/2014
+                            Last updated: 11/19/2014
                             </span>
                         </div>
                         <div align="left">

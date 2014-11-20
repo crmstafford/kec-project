@@ -296,9 +296,6 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="SideContent" Runat="Server">
 
-    <a href="http://bit.ly/1afrLgv" target="_blank"><img src="/images/events/YellowTrophy.png" style="margin:11px;" alt="Healthy Planet Hero Awards" /></a>
-    <br /><br />
-
     <div class="greycontent">
         <span class="style12i">
             <b><i>The person who removes a mountain begins by carrying away small stones.</i></b><br />
