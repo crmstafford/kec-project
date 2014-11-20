@@ -44,6 +44,19 @@
 
         <span class="h1green">
             <strong>
+            37,052 kids and counting this year! 
+            </strong>
+        </span>
+        <br /><br />
+        <div class="greycontent" style="text-align:justify;">
+        <iframe width="540" height="305" src="http://www.youtube.com/embed/ZDaqqzxv-hg" frameborder="0" allowfullscreen></iframe>
+        <br /><br />
+        <b>Together we are connecting families, empowering youth and providing resources to educators.</b>
+        </div>
+        <br /><br /><br />
+
+        <span class="h1green">
+            <strong>
             Fernando Aguerre Inspires 8th Graders at the San Diego Youth Leadership & Dialogue Summit Series 
             </strong>
         </span>

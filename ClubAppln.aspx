@@ -26,12 +26,12 @@
              ErrorMsg.Visible = True
          Else
              Try
-        Dim mailMsg as MailMessage = new MailMessage();
+        Dim mailMsg as MailMessage = new MailMessage()
 
-        mailMsg.To.Add(new MailAddress("clubadmin@kidsecoclub.org", "To Name"));
+        mailMsg.To.Add(new MailAddress("clubadmin@kidsecoclub.org", "To Name"))
         mailMsg.From = new MailAddress("clubadmin@kidsecoclub.org", "From Name")
          Dim timeNow As String = DateTime.Now.ToString()
-        mailMsg.Subject = "ClubAppln: " & txt_firstName.Text & " " & txt_lastName.Text & "," & txt_school.Text & "," & txt_city.Text & "," & txt_clubname.Text;
+        mailMsg.Subject = "ClubAppln: " & txt_firstName.Text & " " & txt_lastName.Text & "," & txt_school.Text & "," & txt_city.Text & "," & txt_clubname.Text
         Dim text As String = "Club application at " & timeNow & ", " & Chr(10) & Chr(13) & _
                      txt_firstName.Text & " " & txt_lastName.Text & Chr(10) & Chr(13) & _
                      radio_iam.SelectedValue & Chr(10) & Chr(13) & _
@@ -46,7 +46,7 @@
                      "City: " & txt_city.Text & ", " & txt_state.Text & Chr(10) & Chr(13) & _
                      txt_email.Text & ", Texting: " & txt_gettexts.Checked & Chr(10) & Chr(13) & _
                      txt_primphone.Text
-        mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain))
+        mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, Nothing, MediaTypeNames.Text.Plain))
 
 
         Dim smtpClient as SmtpClient = new SmtpClient("smtp.sendgrid.net", Convert.ToInt32(587))
