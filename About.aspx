@@ -65,6 +65,7 @@
         <br /><br /><br />
 
 <!--
+comments...
     <span class="styleMedBlk">
     <a href="/Documents/programs_services.pdf" target="_blank"><b>KEC Programs and Services</b>(PDF)</a>
     </span>
