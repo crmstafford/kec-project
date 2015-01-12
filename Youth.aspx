@@ -9,6 +9,9 @@
     End Sub
 </script>
 
+<asp:Content ID="ContentH" ContentPlaceHolderID="HeadContent" runat="server">
+</asp:Content>
+
 <asp:Content ID="ContentA" ContentPlaceHolderID="ImagePlaceHolderA" runat="server">
     <img src="/images/leftall-18.jpg" alt="" />
 </asp:Content>
@@ -113,7 +116,31 @@
         </span>
 
         <br /><br />
-        </span>
+        <table>
+        <tr style="width:600px">
+        <td style="width:320px;vertical-align:top;">
+                    <a class="twitter-timeline"  href="https://twitter.com/KidsEcoClub" data-widget-id="554705811197267968">Tweets by @KidsEcoClub</a>
+            <script>                !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } } (document, "script", "twitter-wjs");</script>
+          
+        </td>
+        <td style="width:300px;">
+        <div style="font-weight:bolder;font-size:15px;padding-top:10px;padding-left:20px;padding-right:28px;">
+        <div style="float:right;">
+                <span class="ig-follow" data-id="5479dee" data-count="false" data-size="small" data-username="false"></span>
+        </div>
+        <div style="float:left;">
+        Instagram
+        <br /><br />
+        </div>
+        </div>
+<!-- www.intagme.com -->
+<iframe src="http://www.intagme.com/in/?u=a2lkc2Vjb2NsdWJ8aW58MTMwfDJ8NHx8eWVzfDEwfHVuZGVmaW5lZHx5ZXM=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:300px; height: 600px" ></iframe>
+        </td>
+        </tr>
+        </table>
+        
+<script>    (function (d, t) { var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.src = "http://instagramfollowbutton.com/components/instagram/v2/js/ig-follow.js"; s.parentNode.insertBefore(g, s); } (document, "script"));</script>
+
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="SideContent" Runat="Server">
