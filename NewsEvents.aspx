@@ -44,6 +44,24 @@
 
         <span class="h1green">
             <strong>
+            2015 Earth Day Festival<br />
+            A Celebration for the Entire Family 
+            </strong>
+        </span>
+        <br /><br />
+        <div class="greycontent" style="text-align:justify;">
+        <b>It's a party for the planet!</b>
+        <br /><br />
+        Join the County of San Diego, the KidsEcoClub &amp; the City of Solana Beach to celebrate Earth Day! <br />
+        April 11th: 11-3pm<br />
+        La Colonia Park, 716 Valley Avenue, Solana Beach
+        <br /><br />
+        <a href="/Documents/earth-day-2015.pdf" target="_blank"><i>Click here to read more...</i></a>
+        </div>
+        <br /><br /><br />
+
+        <span class="h1green">
+            <strong>
             37,052 kids and counting this year! 
             </strong>
         </span>
