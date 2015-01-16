@@ -47,6 +47,85 @@
         <br /><br />
 
         <span class="h1green">
+            <strong>
+            The Healthy Planet Local Hero Awards Gala
+            </strong>
+        </span>
+        <br /><br />
+        <div class="greycontent" style="text-align:justify;">
+        Hi Everyone!<br /><br />
+        Thank you for your generosity and time. The Healthy Planet Local Hero Awards Gala was a great event. It was an honor to celebrate San Diego's
+        environmental champions. I am grateful to have been included among them. Please visit <a href="http://www.facebook.com/kidsecoclub" target="_blank" alt="">KidsEcoClub on FaceBook</a> to see all the pictures.
+        The videos of Betty Yee's welcoming remarks, Dr. Jeremy Jackson's passionate and brillant speech and Sophia Holbrook's call to action are attached.
+        All are worth watching again.<br /><br />
+        <table>
+        <tr>
+        <td><iframe width="180" src="http://www.youtube.com/embed/g-K5YWN5hyo?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></td>
+        <td><iframe width="180" src="http://www.youtube.com/embed/NyWHSflfiag?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></td>
+        <td><iframe width="180" src="http://www.youtube.com/embed/EnaIHl2CnA0?feature=player_detailpage" frameborder="0" allowfullscreen></iframe></td>
+        </tr></table>
+        Thank you Tammy Rooke and Diane Hyat for chairing the event. Betty Yee you were awesome! Dr. Jeremy Jackson, Dr. Nancy Knowlton and Dr. Ralph Keeling,
+        we all learned so much from you. Dr. Nigella Hillgarth, Steven Schindler and Michael Chen, you made it all work.<br /><br />
+        On behalf of KidsEcoClub, thank you! 
+        <br /><br />
+        Sincerely,<br />
+        Max Guinn<br />
+        Founder, KidsEcoClub
+        </div>
+        <br /><br />
+
+        <img src="/images/events/gala-news.jpg" alt="Healthy Planet Hero Awards" />
+        <br /><br />
+        <div class="greycontent" style="text-align:justify;">
+        Congratulation KEC Founder Max Guinn; KEC Green Youth Council Member Sophia H; Educator Lynn Howard; Interim Mayor Todd Gloria; County Supervisor Dave Roberts;
+        SDUSD Board President Kevin Beiser; Whole Foods; Del Mar Fairgrounds; Bastyr University and La Vita Compounding Pharmacy!
+        <br /><br />
+        <a href="http://events.r20.constantcontact.com/register/event?llr=799vjfnab&oeidk=a07e8mxhsly40aaf281&oseq=a015rhjioll52" target="_blank"><i>Click here for more information or to register...</i></a><br />
+        <a href="http://bit.ly/1fUlkll" target="_blank"><i>Click here for the press release...</i></a>
+        </div>
+        <br /><br />
+
+        <span class="h1green">
+            <strong>
+            Whole Foods Market Hillcrest gives Facebook shout-out to KEC
+            </strong>
+        </span>
+        <br /><br />
+        <div class="greycontent" style="text-align:justify;">
+        Sept. 13 - "During our Whole Kids Foundation fundraising campaign, we'd like to give props to the organizations that are really making a difference through
+        all the San Diego Unified School District schools, Kids Eco Club is one of those organizations!"
+        </div>
+        <br /><br /><br />
+
+        <span class="h1green">
+            <strong>
+            Debra Hubers joins KEC's Board!
+            </strong>
+        </span>
+        <br /><br />
+        <div class="greycontent" style="text-align:justify;">
+            <asp:Image id="Image26" runat="server" imageurl="/images/board/dhubers.jpg" height="147px" width="127" imagealign="Left" bordercolor="White" borderwidth="5px" />
+            Debra has 34 years of experience in health care, education and technology. She was President of Imperial Technology Solutions and the Acting CEO for a major health care consulting
+            company. She is a college professor and the Co-Founder of LaVita Compounding Pharmacy. She brings business acumen and venture capital experience to KEC.  
+        </div>
+        <div style="text-align:left">&nbsp;<br /><br /><br /><br /></div>
+        <br /><br /><br />
+
+        <span class="h1green">
+            <strong>
+            John Spiegel, Science Coordinator for the San Diego County Office of Education (SDCOE) joins KEC Board!
+            </strong>
+        </span>
+        <br /><br />
+        <div class="greycontent" style="text-align:justify;">
+            <asp:Image id="Image25" runat="server" imageurl="/images/board/jspiegel.jpg" height="147px" width="127" imagealign="Left" bordercolor="White" borderwidth="5px" />
+            John oversees science curriculum for the 42 school districts and five community college districts in the county. SDCOE has 769​ schools and 499,850 students,
+            including the 12,000 students educated each year through the Juvenile Court and Community Schools. 
+        </div>
+        <div style="text-align:left">&nbsp;<br /><br /><br /><br /><br /></div>
+        <br /><br /><br />
+
+        <span class="h1green">
             <b>GYC member Evan L. speaks again at Solana Beach Council meeting</b>
         </span>
         <br /><br />
