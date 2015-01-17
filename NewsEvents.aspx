@@ -44,25 +44,6 @@
 
         <span class="h1green">
             <strong>
-            San Diego School Energy Conservation Competition<br />
-            </strong>
-        </span>
-        <br />
-        <div class="greycontent" style="text-align:justify;">
-        <b>Wednesday April 22 to Tuesday May 12, 2015</b>
-        <br /><br />
-        Get insight into your school’s &nbsp;energy usage and the impact of it’s occupant’s actions and gain experience in the growing fields of energy management and sustainability.<br />
-        Prizes for schools with the greatest energy conservation.<br />
-        <b>The more you save, the more you win!</b><br /><br />
-        <a href="http://www.energizeschools-sd.org/energy-competition.html" target="_blank">http://www.energizeschools-sd.org/energy-competition.html</a><br />
-        The last day to register is March 23rd
-        <br /><br />
-        <a href="/Documents/2015 Energy Competition Flyer vKEC.pdf" target="_blank"><i>Click here to read more...</i></a>
-        </div>
-        <br /><br /><br />
-
-        <span class="h1green">
-            <strong>
             2015 Earth Day Festival<br />
             A Celebration for the Entire Family 
             </strong>
